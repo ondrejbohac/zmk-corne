@@ -623,8 +623,8 @@
         raise_layer {
             display-name = "Space";
             bindings = <
-&kp LC(LS(F12))     &kp LG(TAB)        &kp HOME             &kp UP              &kp END             &kp PSCRN                                         &trans                       &none               &msc SCRL_UP        &mmv MOVE_UP        &msc SCRL_DOWN      &kp F12             &none
-&kp LSHFT           &kp LGUI           &kp LEFT             &kp DOWN            &kp RIGHT           &kp LA(F4)                        &trans          &trans     &trans            &msc SCRL_LEFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_RIGHT     &none
+&kp LC(F12)         &kp LG(TAB)        &kp HOME             &kp UP              &kp END             &kp PSCRN                                         &trans                       &none               &msc SCRL_UP        &mmv MOVE_UP        &msc SCRL_DOWN      &kp F12             &none
+&kp LC(LS(F12))     &kp LGUI           &kp LEFT             &kp DOWN            &kp RIGHT           &kp LA(F4)                        &trans          &trans     &trans            &msc SCRL_LEFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_RIGHT     &none
 &kp LCTL            &none              &kp LBKT             &kp RBKT            &none               &none               &trans                        &trans                       &none               &none               &none               &none               &none               &none
                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans   
             >;
@@ -671,7 +671,7 @@
         layer_7 {
             display-name = "E_Layer";
             bindings = <  
-&none               &none               &kp LC(LG(LEFT))    &none               &kp LC(LG(RIGHT))   &kp LC(Z)                                            &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
+&tog GAMING         &none               &kp LC(LG(LEFT))    &none               &kp LC(LG(RIGHT))   &kp LC(Z)                                            &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
 &kp LG(TAB)         &kp LC(F)           &kp LG(LS(LEFT))    &none               &kp LG(LS(RIGHT))   &kp LC(Y)                            &trans          &trans     &trans            &rgb_ug RGB_EFR       &rgb_ug RGB_SPD     &rgb_ug RGB_BRD     &rgb_ug RGB_SAD     &rgb_ug RGB_HUD     &trans    
 &none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &trans       
                                                             &kp C_NEXT          &kp LS(LC(LA(DOT))) &kp LC(LA(LS(COMMA)))                                                             &bt BT_SEL 0          &bt BT_SEL 1        &bt BT_SEL 2
