@@ -396,11 +396,46 @@
 };
 
 
-/ {
-    
 
+&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+
+&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+
+&msc {
+    acceleration-exponent = <1>;      // 0
+    time-to-max-speed-ms = <100>;       // 300
+    delay-ms = <0>;                   // 0
+};
+
+&mmv {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent = <1>;
+    trigger-period-ms = <16>;
+};
+
+/ {
     behaviors {
-        bhm: balanced_homerow_mods {
+        td0: td0 {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "Shift/Caps Lock Tap Dance";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+    };
+
+    rgb_encoder: rgb_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+    };
+
+    scroll_encoder: scroll_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+        tap-ms = <100>;
+      bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <150>;    // <---[[moderate duration]]
@@ -412,7 +447,7 @@
         };
     };
 
-        behaviors {
+    behaviors {
         ebhm: enhanced_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -536,135 +571,99 @@
         };
     };
     
- behaviors {
-        ctrl_x: ctrl_x {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&sl NLAYER>, <&kp X>;
-            mods = <(MOD_LCTL)>;
-            keep-mods = <(MOD_LCTL)>;
-        };
-    };
-
- behaviors {
-        mod_f: mod_f {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LCTL F>, <&kp F>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-    };
-    
- behaviors {
-        mod_g: mod_g {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LC(LS(LALT)) G>, <&kp G>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
-        };
-    };
-
- behaviors {
-        mod_t: mod_t {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LG(LC(LS(LALT))) T>, <&kp T>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
-        };
-    };
-
- behaviors {
-        mod_d: mod_d {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LSHFT D>, <&kp D>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-    };
-
- behaviors {
-        mod_j: mod_j {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LCTL J>, <&kp J>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-    };
-
- behaviors {
-        mod_k: mod_k {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LSHFT K>, <&kp K>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-    };
-    
- behaviors {
-        mod_at: mod_at {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LCTL RA(V)>, <&kp RA(V)>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-    };
-
- behaviors {
-        mod_und: mod_und {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LSFT LS(SLASH)>, <&kp LS(SLASH)>;
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-    };
-
-&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
-
-&msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
-};
-
-&mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
-};
-
-/ {
     behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "Shift/Caps Lock Tap Dance";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+            ctrl_x: ctrl_x {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&sl NLAYER>, <&kp X>;
+                mods = <(MOD_LCTL)>;
+                keep-mods = <(MOD_LCTL)>;
+            };
+        };
+
+    behaviors {
+            mod_f: mod_f {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LCTL F>, <&kp F>;
+                mods = <(MOD_LSFT)>;
+                keep-mods = <(MOD_LSFT)>;
+            };
+        };
+        
+    behaviors {
+            mod_g: mod_g {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LC(LS(LALT)) G>, <&kp G>;
+                mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
+                keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
+            };
+        };
+
+    behaviors {
+            mod_t: mod_t {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LG(LC(LS(LALT))) T>, <&kp T>;
+                mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
+                keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
+            };
+        };
+
+    behaviors {
+            mod_d: mod_d {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LSHFT D>, <&kp D>;
+                mods = <(MOD_LSFT)>;
+                keep-mods = <(MOD_LSFT)>;
+            };
+        };
+
+    behaviors {
+            mod_j: mod_j {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LCTL J>, <&kp J>;
+                mods = <(MOD_LSFT)>;
+                keep-mods = <(MOD_LSFT)>;
+            };
+        };
+
+    behaviors {
+            mod_k: mod_k {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LSHFT K>, <&kp K>;
+                mods = <(MOD_LSFT)>;
+                keep-mods = <(MOD_LSFT)>;
+            };
+        };
+        
+    behaviors {
+            mod_at: mod_at {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LCTL RA(V)>, <&kp RA(V)>;
+                mods = <(MOD_LSFT)>;
+                keep-mods = <(MOD_LSFT)>;
+            };
+        };
+
+    behaviors {
+            mod_und: mod_und {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LSFT LS(SLASH)>, <&kp LS(SLASH)>;
+                mods = <(MOD_LSFT)>;
+                keep-mods = <(MOD_LSFT)>;
+            };
         };
     };
 
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <100>;
-    };
 
     keymap {
         compatible = "zmk,keymap";
