@@ -618,7 +618,7 @@
             display-name = "W_Layer";
             bindings = <  
 &none               &none               &kp DEL             &kp DEL             &kp H               &kp LS(SLASH)                                     &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none
-&kp LG(TAB)         &kp N               &kp MINU    S       &kp K               &kp BSPC            &kp J                             &trans          &trans     &trans            &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none  
+&kp LG(TAB)         &kp N               &kp MINU            &kp K               &kp BSPC            &kp J                             &trans          &trans     &trans            &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none  
 &none               &none               &none               &kp LC(FSLH)        &kp LC(N1)          &kp L               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none
                                                             &kp PLUS            &kp LS(LC(LA(N)))   &kp DOT                                                                        &kp BSPC            &kp KP_N0           &kp TAB    
             >;
