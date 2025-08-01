@@ -493,3 +493,19 @@ layers:
 combos:
 - p: [1, 2]
   k: F2
+- p: [3, 14, 16]
+  k: F5
+  l: [Base, Space, Symbol, Symbol+, W_Layer, E_Layer]
+- p: [2, 3]
+  k: $$mdi:keyboard-esc$$
+  l: [Base, Space, Symbol, Symbol+, W_Layer, E_Layer]
+- p: [10, 11]
+  k: Gui+L
+- p: [13, 17]
+  k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
+- p: [3, 4]
+  k: M
+  l: [Base, Space, Symbol, Symbol+, W_Layer, E_Layer]
+- p: [3, 38]
+  k: Gui+E
+  l: [Base, Space, Symbol, Symbol+, W_Layer, E_Layer]
