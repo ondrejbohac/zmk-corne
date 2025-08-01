@@ -660,7 +660,7 @@
                 keep-mods = <(MOD_LSFT)>;
             };
         };
-    };
+
 
 
 
