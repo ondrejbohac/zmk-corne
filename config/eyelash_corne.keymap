@@ -569,10 +569,10 @@
         lower_layer {
             display-name = "Gaming";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&kp TAB           &kp Q           &kp W           &kp E           &kp R           &kp T                                            &mmv MOVE_UP                      &kp Y           &kp U           &kp I           &kp O           &kp P           &quotation
+&kp LSHFT         &kp A           &kp S           &kp D           &kp F           &kp G                            &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H           &kp J           &kp K           &kp L           &u_exclam       &kp ENTER
+&kp LCTL          &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE                       &mmv MOVE_DOWN                    &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
+                                                  &kp LALT        &kp LALT        &kp LCTL                                                                           &kp BSPC        &sl RAISE       &trans    
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -581,10 +581,10 @@
         raise_layer {
             display-name = "Space";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&kp LC(LS(F12))     &kp LG(TAB)        &kp HOME             &kp UP              &kp END             &kp PSCRN                                         &trans                       &none               &msc SCRL_UP        &mmv MOVE_UP        &msc SCRL_DOWN      &kp F12             &none
+&kp LSHFT           &kp LGUI           &kp LEFT             &kp DOWN            &kp RIGHT           &kp LA(F4)                        &trans          &trans     &trans            &msc SCRL_LEFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_RIGHT     &none
+&kp LCTL            &none              &kp LBKT             &kp RBKT            &none               &none               &trans                        &trans                       &none               &none               &none               &none               &none               &none
+                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans   
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -593,10 +593,10 @@
         layer_4 {
             display-name = "Symbol";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &kp HOME            &kp UP              &kp END             &none               &none
+&bhm LSHFT RA(X)    &kp GRAVE           &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp N1              &kp LEFT            &kp DOWN            &kp RIGHT           &sl ADJUST          &none  
+&kp LCTL            &kp RA(COMMA)       &kp RA(W)           &kp FSLH            &kp RA(DOT)         &kp RA(Q)           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &none               &none              &none  
+                                                            &kp N1              &kp LS(LBRC)        &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -605,10 +605,10 @@
         layer_5 {
             display-name = "Symbol+";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&none               &none               &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &p LS(EQUAL)        &trans              &trans              &trans      
+&trans              &kp LS(DOT)         &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
+                                                            &trans              &kp RA(Q)               &trans                                                                         &trans              &trans              &trans     
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -616,11 +616,11 @@
 
         layer_6 {
             display-name = "W_Layer";
-            bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+            bindings = <  
+&none               &none               &kp DEL             &kp DEL             &kp H               &kp LS(SLASH)                                     &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none
+&kp LG(TAB)         &kp N               &kp MINU    S       &kp K               &kp BSPC            &kp J                             &trans          &trans     &trans            &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none  
+&none               &none               &none               &kp LC(FSLH)        &kp LC(N1)          &kp L               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none
+                                                            &kp PLUS            &kp LS(LC(LA(N)))   &kp DOT                                                                        &kp BSPC            &kp KP_N0           &kp TAB    
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -629,10 +629,10 @@
         layer_7 {
             display-name = "E_Layer";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&none               &none               &kp LC(LG(LEFT))    &none               &kp LC(LG(RIGHT))   &kp LC(Z)                                            &trans                       &trans                &trans              &trans              &trans              &trans              &trans      
+&kp LG(TAB)         &kp LC(F)           &kp LG(LS(LEFT))    &none               &kp LG(LS(RIGHT))   &kp LC(Y)                            &trans          &trans     &trans            &trans                &trans              &trans              &trans              &trans              &trans    
+&none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &trans              &trans    
+                                                            &trans              &kp C_NEXT          &kp LS(LC(LA(DOT)))                                                               &kp LC(LA(LS(COMMA))) &bt BT_SEL 0        &bt BT_SEL 1  
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -641,10 +641,10 @@
         layer_8 {
             display-name = "Numbers";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&none               &none               &kp KP_PLUS         &kp KP_MULTIPLY     &kp KP_DIVIDE       &kp MINUS                                         &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none 
+&none               &kp TAB             &kp KP_MINUS        &kp DOT             &kp SPACE           &kp LS(DOT)                       &trans          &trans     &trans            &td1                &kp KP_N4           &kp KP_N5           &kp KP_N6           &none               &none
+&none               &none               &none               &kp COMMA           &none               &none               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none 
+                                                            &trans              &trans              &kp DOT                                                                        &kp BSPC            &kp KP_N0           &kp TAB     
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -653,10 +653,10 @@
         layer_9 {
             display-name = "Macro";
             bindings = <
-&none               &none               &none               &none               &none               &none                                             &none                        &none               &none               &none               &none               &none               &none       
-&none               &none               &none               &none               &none               &none                             &none           &none      &none             &none               &none               &none               &none               &none               &none     
-&none               &none               &none               &none               &none               &none               &none                         &none                        &none               &none               &none               &none               &none               &none     
-                                                            &none               &none               &none                                                                          &none               &none               &none     
+&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
+                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans    
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -665,10 +665,10 @@
         layer_10 {
             display-name = "Empty";
             bindings = <
-&none               &none               &none               &none               &none               &none                                             &none                        &none               &none               &none               &none               &none               &none       
-&none               &none               &none               &none               &none               &none                             &none           &none      &none             &none               &none               &none               &none               &none               &none     
-&none               &none               &none               &none               &none               &none               &none                         &none                        &none               &none               &none               &none               &none               &none     
-                                                            &none               &none               &none                                                                          &none               &none               &none     
+&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
+                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans    
             >;
 
             sensor-bindings = <&scroll_encoder>;
