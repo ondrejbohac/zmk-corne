@@ -99,7 +99,7 @@ layers:
   - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   Space:
-  - Ctl+Sft+F12
+  - Ctl+F12
   - Gui+$$mdi:keyboard-tab$$
   - HOME
   - $$mdi:arrow-up-bold$$
@@ -112,7 +112,7 @@ layers:
   - $$mdi:pan-down$$
   - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-shift$$
+  - Ctl+Sft+F12
   - LGUI
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -295,7 +295,7 @@ layers:
   - KP 0
   - $$mdi:keyboard-tab$$
   E_Layer:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Gaming, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+Gui+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
