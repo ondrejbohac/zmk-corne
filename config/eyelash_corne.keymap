@@ -514,7 +514,7 @@
         ctrl_v: ctrl_v {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&bhm LALT ENTER>, <&kp V>;
+            bindings = <&bhm LALT ESC>, <&kp V>;
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LCTL)>;
         };
@@ -681,7 +681,7 @@
 &none               &none               &kp DEL             &kp DEL             &kp H               &kp LS(SLASH)                                     &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none
 &kp LG(TAB)         &kp N               &kp MINUS           &kp K               &kp BSPC            &kp J                             &trans          &trans     &trans            &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none  
 &none               &none               &none               &kp LC(FSLH)        &kp LC(N1)          &kp L               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none
-                                                            &kp PLUS            &kp LS(LC(LA(N)))   &kp DOT                                                                        &kp BSPC            &kp KP_N0           &kp TAB    
+                                                            &kp PLUS            &kp LS(LC(LA(N)))   &kp ENTER                                                                      &kp BSPC            &kp KP_N0           &kp TAB    
             >;
 
             sensor-bindings = <&scroll_encoder>;
