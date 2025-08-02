@@ -441,6 +441,25 @@
         };
     };
 
+
+    behaviors {
+        wordl: wordl {
+            compatible = "zmk,behavior-mod-morph"; 
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT) >, <&kp HOME>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+    };
+
+    behaviors {
+        wordr: wordr {
+            compatible = "zmk,behavior-mod-morph"; 
+            #binding-cells = <0>;
+            bindings = <&kp LC(RIGHT) >, <&kp END>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+    };
+
     behaviors {
         bspc_hacek: backspace_hacek {
             compatible = "zmk,behavior-mod-morph";
@@ -635,10 +654,10 @@
         layer_4 {
             display-name = "Symbol";
             bindings = <
-&kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &kp HOME            &kp UP              &kp END             &none               &none
-&bhm LSHFT RA(X)    &kp GRAVE           &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp N1              &kp LEFT            &kp DOWN            &kp RIGHT           &sl ADJUST          &none  
-&kp LCTL            &kp RA(COMMA)       &kp RA(W)           &kp FSLH            &kp RA(DOT)         &kp RA(Q)           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &none               &none              &none  
-                                                            &kp N1              &kp LS(LBRC)        &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none
+&kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
+&bhm LSHFT RA(X)    &kp GRAVE           &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl ADJUST          &none  
+&kp LCTL            &kp RA(COMMA)       &kp RA(W)           &kp FSLH            &kp RA(DOT)         &kp RA(Q)           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &kp LS(SQT)         &none              &none  
+                                                            &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none
             >;
 
             sensor-bindings = <&scroll_encoder>;
