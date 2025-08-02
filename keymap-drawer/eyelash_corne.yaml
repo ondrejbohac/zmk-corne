@@ -45,7 +45,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: Numbers, h: '$$mdi:gesture-tap-hold$$', s: X}
   - {t: '$$mdi:keyboard-space$$', h: Space, s: C}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-option$$', s: V}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$', s: V}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
   - F16
@@ -290,7 +290,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - +
   - Meh+N
-  - {t: ., s: '>'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - KP 0
   - $$mdi:keyboard-tab$$
