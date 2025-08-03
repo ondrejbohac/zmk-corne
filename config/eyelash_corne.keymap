@@ -637,7 +637,7 @@
         base_mac {
             display-name = "Base_Mac";
             bindings = <
-&trans              &trans              &kp o               &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &kp O               &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
 &trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans    
