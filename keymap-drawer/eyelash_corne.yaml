@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$', s: V}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
-  - F16
+  - {t: Macro, h: toggle}
   Gaming:
   - $$mdi:keyboard-tab$$
   - Q
