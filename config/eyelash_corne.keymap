@@ -508,6 +508,16 @@
     };
 
     behaviors {
+        ctrl_c_mac: ctrl_c_mac {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&lkp LOWER SPACE>, <&kp C>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+    };
+
+    behaviors {
         bspc_del: bspc_del {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -527,6 +537,16 @@
         };
     };
     
+      behaviors {
+        ctrl_v_mac: ctrl_v_mac {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&bhm LALT ESC>, <&kp V>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
+        };
+    };
+
     behaviors {
             ctrl_x: ctrl_x {
                 compatible = "zmk,behavior-mod-morph";
@@ -534,6 +554,16 @@
                 bindings = <&sl NLAYER>, <&kp X>;
                 mods = <(MOD_LCTL)>;
                 keep-mods = <(MOD_LCTL)>;
+            };
+        };
+
+    behaviors {
+            ctrl_x_mac: ctrl_x_mac {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&sl NLAYER>, <&kp X>;
+                mods = <(MOD_LGUI)>;
+                keep-mods = <(MOD_LGUI)>;
             };
         };
 
@@ -650,7 +680,7 @@
 &trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
 &trans              &trans              &trans              &trans              &mod_f_mac          &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
-                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans    
+                                                            &ctrl_x_mac         &ctrl_c_mac         &ctrl_v_mac                                                                    &trans              &trans              &trans    
             >;
 
             sensor-bindings = <&scroll_encoder>;
