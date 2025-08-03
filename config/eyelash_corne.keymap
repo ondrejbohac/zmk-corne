@@ -11,14 +11,15 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
-#define GAMING 1
-#define LOWER 2
-#define RAISE 3
-#define ADJUST 4
-#define WLAYER 5
-#define ELAYER 6
-#define NLAYER 7
-#define MACRO 8
+#define MAC 1
+#define GAMING 2
+#define LOWER 3
+#define RAISE 4
+#define ADJUST 5
+#define WLAYER 6
+#define ELAYER 7
+#define NLAYER 8
+#define MACRO 9
 
 // Caps Word
 &caps_word {
@@ -627,10 +628,22 @@
 &kp TAB               &kp Q          &lt WLAYER W   &lt ELAYER E     &kp R          &mod_t                                        &mmv MOVE_UP                      &kp Y             &kp U             &kp I           &kp O           &kp P            &quotation
 &lshift LSHFT LSHFT   &kp A          &kp S          &mod_d           &mod_f         &mod_g                        &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H             &mod_j            &mod_k          &kp L           &u_exclam        &kp ENTER
 &kp ESC               &ctrl_z        &kp X          &kp C            &kp V          &kp B          &kp C_MUTE                     &mmv MOVE_DOWN                    &kp N             &kp M             &kp COMMA       &kp DOT         &kp FSLH         &kp RSHFT
-                                                    &ctrl_x          &ctrl_c        &ctrl_v                                                                         &kp BSPC          &sl RAISE         &tog MACRO  
+                                                    &ctrl_x          &ctrl_c        &ctrl_v                                                                         &kp BSPC          &sl RAISE         &tog MAC  
             >;
 
              sensor-bindings = <&scroll_encoder>;
+        };
+
+        base_mac {
+            display-name = "Base_Mac";
+            bindings = <
+&trans              &trans              &kp o               &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
+                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans    
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
 
         lower_layer {
@@ -718,9 +731,9 @@
         };
 
         layer_8 {
-            display-name = "Macro";
+            display-name = "Empty";
             bindings = <
-&tog MACRO          &kp A               &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
 &trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans    
@@ -742,3 +755,15 @@
         };
     };
 };
+
+
+//         layer_9 {
+//             display-name = "Empty";
+//             bindings = <
+// &trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+// &trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+// &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
+//                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans    
+//             >
+
+
