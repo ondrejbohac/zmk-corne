@@ -197,7 +197,7 @@ layers:
   - {t: Sft+=, s: Sft++, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   Symbol+:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Macro, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - AltGr+B
   - AltGr+N
@@ -393,7 +393,7 @@ layers:
   - KP 0
   - $$mdi:keyboard-tab$$
   Macro:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Base, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
