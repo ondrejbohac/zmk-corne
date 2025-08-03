@@ -106,6 +106,12 @@
             bindings = <&kp LG(E)>;
             layers = <0 2 3 4 5 6>;  
         };
+
+       combo_macro {
+            timeout-ms = <30>;
+            key-positions = <0 1>;
+            bindings = <&tog MACRO>;  
+        };
     };
 };
 
