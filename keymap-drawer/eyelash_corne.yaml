@@ -393,8 +393,8 @@ layers:
   - KP 0
   - $$mdi:keyboard-tab$$
   Macro:
-  - {t: Base, h: toggle}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Macro, h: toggle}
+  - A
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
