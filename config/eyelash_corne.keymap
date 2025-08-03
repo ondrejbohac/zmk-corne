@@ -546,6 +546,16 @@
                 keep-mods = <(MOD_LSFT)>;
             };
         };
+
+    behaviors {
+            mod_f_mac: mod_f_mac {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LGUI F>, <&kp F>;
+                mods = <(MOD_LSFT)>;
+                keep-mods = <(MOD_LSFT)>;
+            };
+        };
         
     behaviors {
             mod_g: mod_g {
@@ -635,10 +645,10 @@
         };
 
         base_mac {
-            display-name = "Base_Mac";
+            display-name = "Mac";
             bindings = <
-&trans              &trans              &kp O               &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
-&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &trans              &trans              &mod_f_mac          &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans    
             >;
