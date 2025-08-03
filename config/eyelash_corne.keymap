@@ -627,7 +627,7 @@
 &kp TAB               &kp Q          &lt WLAYER W   &lt ELAYER E     &kp R          &mod_t                                        &mmv MOVE_UP                      &kp Y             &kp U             &kp I           &kp O           &kp P            &quotation
 &lshift LSHFT LSHFT   &kp A          &kp S          &mod_d           &mod_f         &mod_g                        &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H             &mod_j            &mod_k          &kp L           &u_exclam        &kp ENTER
 &kp ESC               &ctrl_z        &kp X          &kp C            &kp V          &kp B          &kp C_MUTE                     &mmv MOVE_DOWN                    &kp N             &kp M             &kp COMMA       &kp DOT         &kp FSLH         &kp RSHFT
-                                                    &ctrl_x          &ctrl_c        &ctrl_v                                                                         &kp BSPC          &sl RAISE         &kp F16  
+                                                    &ctrl_x          &ctrl_c        &ctrl_v                                                                         &kp BSPC          &sl RAISE         &tog MACRO  
             >;
 
              sensor-bindings = <&scroll_encoder>;
