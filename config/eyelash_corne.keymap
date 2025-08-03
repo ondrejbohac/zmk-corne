@@ -666,7 +666,7 @@
         layer_5 {
             display-name = "Symbol+";
             bindings = <
-&none               &none               &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
+&tog MACRO          &none               &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
 &trans              &kp LS(DOT)         &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &kp RA(Q)           &trans                                                                         &trans              &trans              &trans     
@@ -714,7 +714,7 @@
         layer_9 {
             display-name = "Macro";
             bindings = <
-&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&&tog BASE          &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
 &trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans    
