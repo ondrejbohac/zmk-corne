@@ -651,7 +651,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_4 {
+        layer_3 {
             display-name = "Symbol";
             bindings = <
 &kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
@@ -663,10 +663,10 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_5 {
+        layer_4 {
             display-name = "Symbol+";
             bindings = <
-&tog MACRO          &none               &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
+&tog MACRO          &none       ˇůů             &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
 &trans              &kp LS(DOT)         &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &kp RA(Q)           &trans                                                                         &trans              &trans              &trans     
@@ -675,7 +675,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_6 {
+        layer_5 {
             display-name = "W_Layer";
             bindings = <  
 &none               &none               &kp DEL             &kp DEL             &kp H               &kp LS(SLASH)                                     &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none
@@ -687,7 +687,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_7 {
+        layer_6 {
             display-name = "E_Layer";
             bindings = <  
 &tog GAMING         &none               &kp LC(LG(LEFT))    &none               &kp LC(LG(RIGHT))   &kp LC(Z)                                            &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
@@ -699,7 +699,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_8 {
+        layer_7 {
             display-name = "Numbers";
             bindings = <
 &buildl             &none               &kp KP_PLUS         &kp KP_MULTIPLY     &kp KP_DIVIDE       &kp MINUS                                         &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none 
@@ -711,7 +711,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_9 {
+        layer_8 {
             display-name = "Macro";
             bindings = <
 &tog BASE          &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
@@ -723,7 +723,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_10 {
+        layer_9 {
             display-name = "Empty";
             bindings = <
 &trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
