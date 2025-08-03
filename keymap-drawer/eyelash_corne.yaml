@@ -509,3 +509,5 @@ combos:
 - p: [3, 38]
   k: Gui+E
   l: [Base, Space, Symbol, Symbol+, W_Layer, E_Layer]
+- p: [0, 1]
+  k: {t: Macro, h: toggle}

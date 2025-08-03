@@ -613,6 +613,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="476" y="71" width="28" height="26" class="combo"/>
 <text x="490" y="84" class="combo tap">Gui+E</text>
 </g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-Gaming">
@@ -883,6 +889,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="126" y="85" width="28" height="26" class="combo"/>
 <text x="140" y="98" class="combo tap">A</text>
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="132" y="94" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1172,6 +1184,12 @@ rect.held, rect.combo.held {
 <path d="M490,84 l276,53" class="combo"/>
 <rect rx="6" ry="6" x="476" y="71" width="28" height="26" class="combo"/>
 <text x="490" y="84" class="combo tap">Gui+E</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1501,6 +1519,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="476" y="71" width="28" height="26" class="combo"/>
 <text x="490" y="84" class="combo tap">Gui+E</text>
 </g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1274)" class="layer-Symbol+">
@@ -1791,6 +1815,12 @@ rect.held, rect.combo.held {
 <path d="M490,84 l276,53" class="combo"/>
 <rect rx="6" ry="6" x="476" y="71" width="28" height="26" class="combo"/>
 <text x="490" y="84" class="combo tap">Gui+E</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2095,6 +2125,12 @@ rect.held, rect.combo.held {
 <path d="M490,84 l276,53" class="combo"/>
 <rect rx="6" ry="6" x="476" y="71" width="28" height="26" class="combo"/>
 <text x="490" y="84" class="combo tap">Gui+E</text>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2404,6 +2440,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="476" y="71" width="28" height="26" class="combo"/>
 <text x="490" y="84" class="combo tap">Gui+E</text>
 </g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2229)" class="layer-Numbers">
@@ -2696,6 +2738,12 @@ rect.held, rect.combo.held {
 <text x="140" y="98" class="combo tap">A</text>
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="132" y="94" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2548)" class="layer-Macro">
@@ -2958,6 +3006,12 @@ rect.held, rect.combo.held {
 <text x="140" y="98" class="combo tap">A</text>
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="132" y="94" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
 </g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 2866)" class="layer-Empty">
@@ -3217,6 +3271,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="126" y="85" width="28" height="26" class="combo"/>
 <text x="140" y="98" class="combo tap">A</text>
 <use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="132" y="94" height="15" width="15.0" class="combo hold glyph mdi:apple-keyboard-command"/>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="42" y="36" width="28" height="26" class="combo"/>
+<a href="#Macro">
+<text x="56" y="49" class="combo tap layer-activator">Macro</text>
+</a><text x="56" y="60" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
