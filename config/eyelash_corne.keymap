@@ -13,13 +13,14 @@
 #define BASE 0
 #define MAC 1
 #define GAMING 2
-#define LOWER 3
-#define RAISE 4
-#define ADJUST 5
-#define WLAYER 6
-#define ELAYER 7
-#define NLAYER 8
-#define MACRO 9
+#define SPACE 3
+#define SYMBOL 4
+#define SYMBOLMAC 5
+#define SYMBOLPLUS 6
+#define WLAYER 7
+#define ELAYER 8
+#define NUMBERS 9 
+#define MACRO 10
 
 // Caps Word
 &caps_word {
@@ -511,7 +512,7 @@
         ctrl_c: ctrl_c {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lkp LOWER SPACE>, <&kp C>;
+            bindings = <&lkp SPACE SPACE>, <&kp C>;
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LCTL)>;
         };
@@ -521,7 +522,7 @@
         ctrl_c_mac: ctrl_c_mac {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lkp LOWER SPACE>, <&kp C>;
+            bindings = <&lkp SPACE SPACE>, <&kp C>;
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
@@ -561,7 +562,7 @@
             ctrl_x: ctrl_x {
                 compatible = "zmk,behavior-mod-morph";
                 #binding-cells = <0>;
-                bindings = <&sl NLAYER>, <&kp X>;
+                bindings = <&sl NUMBERS>, <&kp X>;
                 mods = <(MOD_LCTL)>;
                 keep-mods = <(MOD_LCTL)>;
             };
@@ -571,7 +572,7 @@
             ctrl_x_mac: ctrl_x_mac {
                 compatible = "zmk,behavior-mod-morph";
                 #binding-cells = <0>;
-                bindings = <&sl NLAYER>, <&kp X>;
+                bindings = <&sl NUMBERS>, <&kp X>;
                 mods = <(MOD_LGUI)>;
                 keep-mods = <(MOD_LGUI)>;
             };
@@ -678,7 +679,7 @@
 &kp TAB               &kp Q          &lt WLAYER W   &lt ELAYER E     &kp R          &mod_t                                        &mmv MOVE_UP                      &kp Y             &kp U             &kp I           &kp O           &kp P            &quotation
 &lshift LSHFT LSHFT   &kp A          &kp S          &mod_d           &mod_f         &mod_g                        &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H             &mod_j            &mod_k          &kp L           &u_exclam        &kp ENTER
 &kp ESC               &ctrl_z        &kp X          &kp C            &kp V          &kp B          &kp C_MUTE                     &mmv MOVE_DOWN                    &kp N             &kp M             &kp COMMA       &kp DOT         &kp FSLH         &kp RSHFT
-                                                    &ctrl_x          &ctrl_c        &ctrl_v                                                                         &kp BSPC          &sl RAISE         &tog MAC  
+                                                    &ctrl_x          &ctrl_c        &ctrl_v                                                                         &kp BSPC          &sl SYMBOL         &tog MAC  
             >;
 
              sensor-bindings = <&scroll_encoder>;
@@ -702,7 +703,7 @@
 &kp TAB           &kp Q           &kp W           &kp E           &kp R           &kp T                                            &mmv MOVE_UP                      &kp Y           &kp U           &kp I           &kp O           &kp P           &quotation
 &kp LSHFT         &kp A           &kp S           &kp D           &kp F           &kp G                            &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H           &kp J           &kp K           &kp L           &u_exclam       &kp ENTER
 &kp LCTL          &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE                       &mmv MOVE_DOWN                    &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
-                                                  &kp LALT        &kp LALT        &kp LCTL                                                                           &kp BSPC        &sl RAISE       &trans    
+                                                  &kp LALT        &kp SPACE       &kp LCTL                                                                           &kp BSPC        &sl SYMBOL       &trans    
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -720,11 +721,11 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        symbol {
             display-name = "Symbol";
             bindings = <
 &kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
-&bhm LSHFT RA(X)    &kp GRAVE           &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl ADJUST          &none  
+&bhm LSHFT RA(X)    &kp GRAVE           &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS          &none  
 &kp LCTL            &kp RA(COMMA)       &kp RA(W)           &kp FSLH            &kp RA(DOT)         &kp RA(Q)           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &kp LS(SQT)         &none              &none  
                                                             &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none
             >;
@@ -732,7 +733,19 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_4 {
+        symbol_mac {
+            display-name = "SymbolMac";
+            bindings = <
+&kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
+&bhm LSHFT RA(X)    &kp GRAVE           &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS          &none  
+&kp LCTL            &kp RA(COMMA)       &kp RA(W)           &kp FSLH            &kp RA(DOT)         &kp RA(Q)           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &kp LS(SQT)         &none              &none  
+                                                            &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        symbol_plus {
             display-name = "Symbol+";
             bindings = <
 &tog MACRO          &none               &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
@@ -744,7 +757,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_5 {
+        w_layer {
             display-name = "W_Layer";
             bindings = <  
 &none               &none               &kp DEL             &kp DEL             &kp H               &kp LS(SLASH)                                     &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none
@@ -756,7 +769,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_6 {
+        e_layer {
             display-name = "E_Layer";
             bindings = <  
 &tog GAMING         &none               &kp LC(LG(LEFT))    &none               &kp LC(LG(RIGHT))   &kp LC(Z)                                            &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
@@ -768,7 +781,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_7 {
+        numbers {
             display-name = "Numbers";
             bindings = <
 &buildl             &none               &kp KP_PLUS         &kp KP_MULTIPLY     &kp KP_DIVIDE       &kp MINUS                                         &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none 
@@ -780,7 +793,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_8 {
+        empty_1 {
             display-name = "Empty";
             bindings = <
 &trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
@@ -792,7 +805,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_9 {
+        empty_2 {
             display-name = "Empty";
             bindings = <
 &trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
