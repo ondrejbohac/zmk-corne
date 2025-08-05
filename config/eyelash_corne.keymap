@@ -13,7 +13,7 @@
 #define BASE 0
 #define MAC 1
 #define GAMING 2
-#define SPACE 3
+#define SPACELAYER 3
 #define SYMBOL 4
 #define SYMBOLMAC 5
 #define SYMBOLPLUS 6
@@ -81,7 +81,7 @@
             timeout-ms = <30>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
-            layers = <0 1 3 4 5 6>; 
+            layers = <0 1>; 
         };
 
         combo_lock {
@@ -100,28 +100,28 @@
             timeout-ms = <25>;
             key-positions = <3 4>;
             bindings = <&kp M>;
-            layers = <0 1 3 4 5 6>;  
+            layers = <0 1>;  
         };
 
        combo_win_e {
             timeout-ms = <30>;
             key-positions = <3 43>;
             bindings = <&kp LG(E)>;
-            layers = <0 1 3 4 5 6>;  
+            layers = <0>;  
         };
 
        combo_gaming {
             timeout-ms = <30>;
             key-positions = <0 1>;
             bindings = <&tog GAMING>;
-            layers = <0 1 2 3 4 5 6>;  
+            layers = <0 1 2>;  
         };
 
        combo_mac {
             timeout-ms = <30>;
             key-positions = <0 13>;
             bindings = <&tog MAC>;
-            layers = <0 1 2 3 4 5 6>;  
+            layers = <0 1 2>;  
         };
 
     };
@@ -332,7 +332,29 @@
                  ;
         };
 
+            winswitch: winswitch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings
+                = 
+                <&macro_tap &tog BASE>
+                ,<&macro_tap &bt BT_SEL 0>
+                 ;
+        };
 
+            macswitch: macswitch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings
+                = 
+                <&macro_tap &tog MAC>
+                ,<&macro_tap &bt BT_SEL 1>
+                 ;
+        };
     };
 };
 
@@ -512,7 +534,7 @@
         ctrl_c: ctrl_c {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lkp SPACE SPACE>, <&kp C>;
+            bindings = <&lkp SPACELAYER SPACE>, <&kp C>;
             mods = <(MOD_LCTL)>;
             keep-mods = <(MOD_LCTL)>;
         };
@@ -522,7 +544,7 @@
         ctrl_c_mac: ctrl_c_mac {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lkp SPACE SPACE>, <&kp C>;
+            bindings = <&lkp SPACELAYER SPACE>, <&kp C>;
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
