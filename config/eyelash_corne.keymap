@@ -55,9 +55,9 @@
     acceleration-exponent = <2>;
 };
 
-//tab 0,    q 1,    w 2,   e 3,    r 4,    t 5,    y 6,    u 7,    i 8,    o 9,    p 10,   ' 11
-//shift 12, a 13,   s 14,  d 15,   f 16,   g 17,   h 18,   j 19,   k 20,   l 21,   ; 22,   enter 23
-//esc 24,   z 25,   x 26,  c 27,   v 28,   b 29,   n 30,   m 31,   , 32,   . 33,   / 34,   shift 35
+//tab 0,    q 1,    w 2,   e 3,    r 4,    t 5,    y 7,    u 8,    i 9,    o 10,    p 11,   ' 12
+//shift 13, a 14,   s 15,  d 16,   f 17,   g 18,   h 22,   j 23,   k 24,   l 25,   ; 26,   enter 27
+//esc 28,   z 29,   x 30,  c 31,   v 32,   b 33,   n 35,   m 36,   , 37,   . 38,   / 39,   shift 40
 
 / {
     combos {
@@ -70,7 +70,7 @@
 
         combo_f5 {
             timeout-ms = <50>;
-            key-positions = <3 14 16>;
+            key-positions = <14 35>;
             bindings = <&kp F5>;
             layers = <0 2 3 4 5 6>;  
         };
@@ -740,7 +740,7 @@
 &none               &none               &kp DEL             &kp DEL             &kp H               &kp LS(SLASH)                                     &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none
 &kp LG(TAB)         &kp N               &kp MINUS           &kp K               &kp BSPC            &kp J                             &trans          &trans     &trans            &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none  
 &none               &none               &none               &kp LC(FSLH)        &kp LC(N1)          &kp L               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none
-                                                            &kp PLUS            &kp LS(LC(LA(N)))   &kp ENTER                                                                      &kp BSPC            &kp KP_N0           &kp TAB    
+                                                            &kp PLUS            &kp LS(LC(LA(N)))   &kp ENTER                                                                      &kp BSPC            &kp KP_N0           &kp TAB   
             >;
 
             sensor-bindings = <&scroll_encoder>;
