@@ -797,7 +797,7 @@
 &tog GAMING         &none               &kp LC(LG(LEFT))    &none               &kp LC(LG(RIGHT))   &kp LC(Z)                                            &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
 &kp LG(TAB)         &kp LC(F)           &kp LG(LS(LEFT))    &none               &kp LG(LS(RIGHT))   &kp LC(Y)                            &trans          &trans     &trans            &rgb_ug RGB_EFR       &rgb_ug RGB_SPD     &rgb_ug RGB_BRD     &rgb_ug RGB_SAD     &rgb_ug RGB_HUD     &trans    
 &none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &trans       
-                                                            &kp C_NEXT          &kp LS(LC(LA(DOT))) &kp ENTER                                                                         &bt BT_SEL 0          &bt BT_SEL 1        &bt BT_SEL 2
+                                                            &kp C_NEXT          &kp LS(LC(LA(DOT))) &kp ENTER                                                                         &winswitch            &macswitch          &bt BT_SEL 2
             >;
 
             sensor-bindings = <&scroll_encoder>;
