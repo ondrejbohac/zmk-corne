@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: Numbers, h: '$$mdi:gesture-tap-hold$$', s: X}
-  - {t: '$$mdi:keyboard-space$$', h: Space, s: C}
+  - {t: '3', h: Space, s: C}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$', s: V}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
@@ -93,7 +93,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Numbers, h: '$$mdi:gesture-tap-hold$$', s: X}
-  - {t: '$$mdi:keyboard-space$$', h: Space, s: C}
+  - {t: '3', h: Space, s: C}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$', s: V}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -142,7 +142,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-option$$
+  - '3'
   - LCTL
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
@@ -240,10 +240,59 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '1', s: '!'}
-  - $$mdi:keyboard-space$$
+  - '3'
   - {t: Sft+-, s: Sft+_}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Sft+=, s: Sft++, type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  SymbolMac:
+  - {t: AltGr+1, s: AltGr+!}
+  - {t: Sft+., s: Sft+>}
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - {t: ']', s: '}'}
+  - 'Sft+:'
+  - {t: AltGr+;, s: 'AltGr+:'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, s: '?'}
+  - {t: 'Ctl+$$mdi:arrow-left-bold$$', s: HOME}
+  - $$mdi:arrow-up-bold$$
+  - {t: 'Ctl+$$mdi:arrow-right-bold$$', s: END}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: AltGr+X, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '`', s: '~'}
+  - {t: '-', s: _}
+  - {t: Sft+/, h: LSFT, s: Sft+/}
+  - {t: AltGr+V, h: LCTL, s: AltGr+V}
+  - KP MULTIPLY
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+{
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: Symbol+, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LCTL
+  - {t: 'AltGr+,', s: AltGr+<}
+  - AltGr+W
+  - {t: /, s: '?'}
+  - {t: AltGr+., s: AltGr+>}
+  - AltGr+Q
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Gui+., s: Gui+>}
+  - AltGr+F
+  - AltGr+G
+  - {t: Sft+', s: Sft+"}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '1', s: '!'}
+  - '3'
+  - {t: Sft+-, s: Sft+_}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: Sft+=, s: Sft++}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   Symbol+:
   - {t: Empty, h: toggle}
@@ -410,7 +459,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - KP MINUS
   - {t: ., s: '>'}
-  - $$mdi:keyboard-space$$
+  - '3'
   - {t: Sft+., s: Sft+>}
   - '&buildr'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -495,23 +544,23 @@ combos:
   k: F2
 - p: [3, 15, 17]
   k: F5
-  l: [Base, Mac, Space, Symbol, Symbol+, W_Layer]
+  l: [Base, Mac, Space, Symbol, SymbolMac, Symbol+]
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
-  l: [Base, Mac, Space, Symbol, Symbol+, W_Layer]
+  l: [Base, Mac, Space, Symbol, SymbolMac, Symbol+]
 - p: [11, 12]
   k: Gui+L
 - p: [14, 18]
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
 - p: [3, 4]
   k: M
-  l: [Base, Mac, Space, Symbol, Symbol+, W_Layer]
+  l: [Base, Mac, Space, Symbol, SymbolMac, Symbol+]
 - p: [3, 43]
   k: Gui+E
-  l: [Base, Mac, Space, Symbol, Symbol+, W_Layer]
+  l: [Base, Mac, Space, Symbol, SymbolMac, Symbol+]
 - p: [0, 1]
   k: {t: Gaming, h: toggle}
-  l: [Base, Mac, Gaming, Space, Symbol, Symbol+, W_Layer]
+  l: [Base, Mac, Gaming, Space, Symbol, SymbolMac, Symbol+]
 - p: [0, 13]
   k: {t: Mac, h: toggle}
-  l: [Base, Mac, Gaming, Space, Symbol, Symbol+, W_Layer]
+  l: [Base, Mac, Gaming, Space, Symbol, SymbolMac, Symbol+]
