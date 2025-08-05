@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: Numbers, h: '$$mdi:gesture-tap-hold$$', s: X}
-  - {t: '3', h: Space, s: C}
+  - {t: '$$mdi:keyboard-space$$', h: Space, s: C}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$', s: V}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
@@ -93,7 +93,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Numbers, h: '$$mdi:gesture-tap-hold$$', s: X}
-  - {t: '3', h: Space, s: C}
+  - {t: '$$mdi:keyboard-space$$', h: Space, s: C}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$', s: V}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -142,7 +142,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
-  - '3'
+  - $$mdi:keyboard-space$$
   - LCTL
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
@@ -240,7 +240,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '1', s: '!'}
-  - '3'
+  - $$mdi:keyboard-space$$
   - {t: Sft+-, s: Sft+_}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Sft+=, s: Sft++, type: held}
@@ -289,7 +289,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '1', s: '!'}
-  - '3'
+  - $$mdi:keyboard-space$$
   - {t: Sft+-, s: Sft+_}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Sft+=, s: Sft++}
@@ -459,7 +459,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - KP MINUS
   - {t: ., s: '>'}
-  - '3'
+  - $$mdi:keyboard-space$$
   - {t: Sft+., s: Sft+>}
   - '&buildr'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -547,20 +547,20 @@ combos:
   l: [Base, Mac, Space, Symbol, SymbolMac, Symbol+]
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
-  l: [Base, Mac, Space, Symbol, SymbolMac, Symbol+]
+  l: [Base, Mac]
 - p: [11, 12]
   k: Gui+L
 - p: [14, 18]
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
 - p: [3, 4]
   k: M
-  l: [Base, Mac, Space, Symbol, SymbolMac, Symbol+]
+  l: [Base, Mac]
 - p: [3, 43]
   k: Gui+E
-  l: [Base, Mac, Space, Symbol, SymbolMac, Symbol+]
+  l: [Base]
 - p: [0, 1]
   k: {t: Gaming, h: toggle}
-  l: [Base, Mac, Gaming, Space, Symbol, SymbolMac, Symbol+]
+  l: [Base, Mac, Gaming]
 - p: [0, 13]
   k: {t: Mac, h: toggle}
-  l: [Base, Mac, Gaming, Space, Symbol, SymbolMac, Symbol+]
+  l: [Base, Mac, Gaming]
