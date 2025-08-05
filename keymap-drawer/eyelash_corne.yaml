@@ -438,8 +438,8 @@ layers:
   - $$mdi:skip-next$$
   - {t: Meh+., s: Meh+>}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - '&winswitch'
+  - '&macswitch'
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   Numbers:
   - '&buildl'
