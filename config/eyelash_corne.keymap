@@ -57,7 +57,8 @@
 
 //tab 0,    q 1,    w 2,   e 3,    r 4,    t 5,    y 7,    u 8,    i 9,    o 10,    p 11,   ' 12
 //shift 13, a 14,   s 15,  d 16,   f 17,   g 18,   h 22,   j 23,   k 24,   l 25,   ; 26,   enter 27
-//esc 28,   z 29,   x 30,  c 31,   v 32,   b 33,   n 35,   m 36,   , 37,   . 38,   / 39,   shift 40
+//esc 28,   z 29,   x 30,  c 31,   v 32,   b 33,   n 36,   m 37,   , 38,   . 39,   / 40,   shift 40
+//                                 41 42 43,           44 45 46
 
 / {
     combos {
@@ -70,27 +71,27 @@
 
         combo_f5 {
             timeout-ms = <50>;
-            key-positions = <14 35>;
+            key-positions = <2 14 16>;
             bindings = <&kp F5>;
-            layers = <0 2 3 4 5 6>;  
+            layers = <0 1 3 4 5 6>;  
         };
 
         combo_we {
             timeout-ms = <30>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
-            layers = <0 2 3 4 5 6>; 
+            layers = <0 1 3 4 5 6>; 
         };
 
         combo_lock {
             timeout-ms = <50>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
             bindings = <&kp LG(L)>;
         };
 
         combo_sound {
             timeout-ms = <10>;
-            key-positions = <13 17>;
+            key-positions = <14 18>;
             bindings = <&kp LG(A)>;
         };
 
@@ -98,21 +99,30 @@
             timeout-ms = <25>;
             key-positions = <3 4>;
             bindings = <&kp M>;
-            layers = <0 2 3 4 5 6>;  
+            layers = <0 1 3 4 5 6>;  
         };
 
        combo_win_e {
             timeout-ms = <30>;
-            key-positions = <3 38>;
+            key-positions = <3 43>;
             bindings = <&kp LG(E)>;
-            layers = <0 2 3 4 5 6>;  
+            layers = <0 1 3 4 5 6>;  
         };
 
-       combo_macro {
+       combo_gaming {
             timeout-ms = <30>;
             key-positions = <0 1>;
-            bindings = <&tog MACRO>;  
+            bindings = <&tog GAMING>;
+            layers = <0 1 2 3 4 5 6>;  
         };
+
+       combo_mac {
+            timeout-ms = <30>;
+            key-positions = <0 13>;
+            bindings = <&tog MAC>;
+            layers = <0 1 2 3 4 5 6>;  
+        };
+
     };
 };
 
