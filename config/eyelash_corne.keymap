@@ -17,11 +17,12 @@
 #define SYMBOL 4
 #define SYMBOLMAC 5
 #define SYMBOLPLUS 6
-#define WLAYER 7
-#define ELAYER 8
-#define ELAYERMAC 9
-#define NUMBERS 10 
-#define MACRO 11
+#define SYMBOLPLUS 7
+#define WLAYER 8
+#define ELAYER 9
+#define ELAYERMAC 10
+#define NUMBERS 11
+#define MACRO 12
 
 // Caps Word
 &caps_word {
@@ -757,11 +758,11 @@
         };
 
         symbol_mac {
-            display-name = "SymbolMac";
+            display-name = "SymbolM";
             bindings = <
 &kp LA(N5)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp LA(N4)                                        &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
 &bhm LSHFT LA(N3)   &kp RA(SEMI)        &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS          &none  
-&kp LCTL            &kp RA(COMMA)       &kp LS(TILDE)       &kp FSLH            &kp RA(DOT)         &kp TILDE           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &kp LS(SQT)         &none              &none  
+&kp LCTL            &kp RA(COMMA)       &kp LS(TILDE)       &kp FSLH            &kp RA(DOT)         &kp GRAVE           &trans                        &trans                       &kp LG(P)           &kp LA(LBKT)        &kp LA(RBKT)        &kp LS(SQT)         &none              &none  
                                                             &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none   
             >;
 
@@ -772,6 +773,18 @@
             display-name = "Symbol+";
             bindings = <
 &tog MACRO          &none               &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
+&trans              &kp LS(DOT)         &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
+                                                            &trans              &kp RA(Q)           &trans                                                                         &trans              &trans              &trans     
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        symbol_plus_mac {
+            display-name = "Symbol+M";
+            bindings = <
+&tog MACRO          &none               &kp LA(N9)          &kp LA(N0)          &kp EQUAL           &kp LA(N7)                                        &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
 &trans              &kp LS(DOT)         &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &kp RA(Q)           &trans                                                                         &trans              &trans              &trans     
