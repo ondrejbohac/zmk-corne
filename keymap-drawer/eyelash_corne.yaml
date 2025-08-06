@@ -6,7 +6,7 @@ layers:
   - {t: W, h: W_Layer}
   - {t: E, h: E_Layer}
   - R
-  - {t: T, h: 'Gui+Ctl+Sft+$$mdi:apple-keyboard-option$$', s: T}
+  - T
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - Y
   - U
@@ -27,7 +27,7 @@ layers:
   - {t: J, h: LCTL, s: J}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$', s: K}
   - L
-  - {t: ;, s: ''''}
+  - {t: ;, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-esc$$
   - {t: Z, s: Y}
