@@ -530,6 +530,24 @@
     };
 
     behaviors {
+        left_mac: left_mac {
+            compatible = "zmk,behavior-mod-morph"; 
+            #binding-cells = <0>;
+            bindings = <&kp LEFT >, <&kp LA(LEFT)>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+    };
+
+    behaviors {
+        right_mac: right_mac {
+            compatible = "zmk,behavior-mod-morph"; 
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT >, <&kp LA(RIGHT)>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+    };
+
+    behaviors {
         bspc_hacek: backspace_hacek {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
