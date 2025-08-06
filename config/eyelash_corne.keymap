@@ -113,6 +113,13 @@
             layers = <0>;  
         };
 
+       combo_finder {
+            timeout-ms = <30>;
+            key-positions = <3 44>;
+            bindings = <&kp LA(LG(SPACE))>;
+            layers = <1>;  
+        };
+
        combo_gaming {
             timeout-ms = <30>;
             key-positions = <0 1>;
