@@ -184,11 +184,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - VOL DN
-  - PREV
+  - $$mdi:volume-low$$
+  - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
-  - NEXT
-  - VOL UP
+  - $$mdi:skip-next$$
+  - $$mdi:volume-high$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -233,11 +233,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - VOL DN
-  - PREV
+  - $$mdi:volume-low$$
+  - $$mdi:skip-previous$$
   - $$mdi:play-pause$$
-  - NEXT
-  - VOL UP
+  - $$mdi:skip-next$$
+  - $$mdi:volume-high$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
