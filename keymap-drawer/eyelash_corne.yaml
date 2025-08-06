@@ -52,7 +52,7 @@ layers:
   Mac:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: W, h: W_LayerM}
   - {t: E, h: E_Layer_Mac}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -493,7 +493,7 @@ layers:
   W_LayerM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace-reverse-outline$$', type: held}
   - $$mdi:backspace-reverse-outline$$
   - H
   - {t: Sft+/, s: 'Sft+?'}
@@ -594,7 +594,7 @@ layers:
   - Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - Ctl+$$mdi:arrow-right-bold$$
-  - Sft+Alt+Y
+  - Sft+Alt+Z
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
   - RGB SPI
@@ -607,7 +607,7 @@ layers:
   - Gui+Sft+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+Sft+$$mdi:arrow-right-bold$$
-  - Alt+Y
+  - Alt+Z
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
