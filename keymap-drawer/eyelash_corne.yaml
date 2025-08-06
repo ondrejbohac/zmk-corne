@@ -76,7 +76,7 @@ layers:
   - {t: J, h: LGUI, s: J}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: u exclam, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
