@@ -95,7 +95,7 @@ layers:
   - {t: Numbers, h: '$$mdi:gesture-tap-hold$$', s: X}
   - {t: '$$mdi:keyboard-space$$', h: SpaceM, s: C}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$', s: V}
-  - {t: BKSPC, s: Alt+BKSPC}
+  - {t: '$$mdi:backspace$$', s: 'Alt+$$mdi:backspace$$'}
   - {t: SymbolM, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   Gaming:
@@ -746,6 +746,10 @@ combos:
   l: [Base, Mac]
 - p: [11, 12]
   k: Gui+L
+  l: [Base]
+- p: [11, 12]
+  k: Gui+'
+  l: [Base]
 - p: [14, 18]
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
 - p: [3, 4]
