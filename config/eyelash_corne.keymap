@@ -98,7 +98,7 @@
         combo_lock_mac {
             timeout-ms = <50>;
             key-positions = <11 12>;
-            bindings = <&kp LG(SQT)>;
+            bindings = <&kp LG(NUBS)>;
             layers = <1>; 
         }; 
 
