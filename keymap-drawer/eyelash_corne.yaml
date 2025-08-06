@@ -76,8 +76,8 @@ layers:
   - {t: J, h: LGUI, s: J}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-return$$', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
+  - {t: u exclam, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
+  - ENTE%R
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
