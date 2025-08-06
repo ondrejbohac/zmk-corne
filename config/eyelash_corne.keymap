@@ -13,18 +13,19 @@
 #define BASE 0
 #define MAC 1
 #define GAMING 2
-#define SPACELAYER 3
-#define SPACELAYERMAC 4
-#define SYMBOL 5
-#define SYMBOLMAC 6
-#define SYMBOLPLUS 7
-#define SYMBOLPLUSMAC 8
-#define WLAYER 9
-#define WLAYERMAC 10
-#define ELAYER 11
-#define ELAYERMAC 12
-#define NUMBERS 13
-#define MACRO 14
+#define GAMINGMAC 3
+#define SPACELAYER 4
+#define SPACELAYERMAC 5
+#define SYMBOL 6
+#define SYMBOLMAC 7
+#define SYMBOLPLUS 8
+#define SYMBOLPLUSMAC 9
+#define WLAYER 10
+#define WLAYERMAC 11
+#define ELAYER 12
+#define ELAYERMAC 13
+#define NUMBERS 14
+#define FUNCTION 15
 
 // Caps Word
 &caps_word {
@@ -775,7 +776,7 @@
 &kp TAB               &kp Q          &lt WLAYER W   &lt ELAYER E     &kp R          &mod_t                                        &mmv MOVE_UP                      &kp Y             &kp U             &kp I           &kp O           &kp P            &quotation
 &lshift LSHFT LSHFT   &kp A          &kp S          &mod_d           &mod_f         &mod_g                        &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H             &mod_j            &mod_k          &kp L           &u_exclam        &kp ENTER
 &kp ESC               &ctrl_z        &kp X          &kp C            &kp V          &kp B          &kp C_MUTE                     &mmv MOVE_DOWN                    &kp N             &kp M             &kp COMMA       &kp DOT         &kp FSLH         &kp RSHFT
-                                                    &ctrl_x          &ctrl_c        &ctrl_v                                                                         &kp BSPC          &sl SYMBOL         &tog MAC  
+                                                    &ctrl_x          &ctrl_c        &ctrl_v                                                                         &kp BSPC          &sl SYMBOL        &tog MAC  
             >;
 
              sensor-bindings = <&scroll_encoder>;
@@ -784,7 +785,7 @@
         base_mac {
             display-name = "Mac";
             bindings = <
-&trans              &trans              &lt WLAYERMAC W     &lt ELAYERMAC E     &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &lt WLAYERMAC W     &lt ELAYERMAC E     &trans              &trans                                            &trans                       &trans              &trans              &lt FUNCTION I      &trans              &trans              &trans      
 &trans              &trans              &trans              &trans              &mod_f_mac          &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &bhm LS(LA(LG(LCTRL))) ENTER 
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &ctrl_x_mac         &ctrl_c_mac         &ctrl_v_mac                                                                    &mac_bspc           &sl SYMBOLMAC       &trans    
@@ -798,8 +799,20 @@
             bindings = <
 &kp TAB           &kp Q           &kp W           &kp E           &kp R           &kp T                                            &mmv MOVE_UP                      &kp Y           &kp U           &kp I           &kp O           &kp P           &quotation
 &kp LSHFT         &kp A           &kp S           &kp D           &kp F           &kp G                            &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H           &kp J           &kp K           &kp L           &u_exclam       &kp ENTER
-&kp LCTL          &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE                       &mmv MOVE_DOWN                    &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
-                                                  &kp LALT        &kp SPACE       &kp LGUI                                                                           &kp BSPC        &sl SYMBOL       &trans    
+&kp ESC           &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE                       &mmv MOVE_DOWN                    &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
+                                                  &bhm LALT M     &kp SPACE       &kp LCTRL                                                                          &kp BSPC        &sl SYMBOL       &trans    
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        gaming_mac {
+            display-name = "GamingM";
+            bindings = <
+&kp TAB           &kp Q           &kp W           &kp E           &kp R           &kp T                                            &mmv MOVE_UP                      &kp Y           &kp U           &kp I           &kp O           &kp P           &quotation
+&kp LSHFT         &kp A           &kp S           &kp D           &kp F           &kp G                            &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H           &kp J           &kp K           &kp L           &u_exclam       &bhm LS(LA(LG(LCTRL))) ENTER 
+&kp ESC           &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE                       &mmv MOVE_DOWN                    &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
+                                                  &kp LALT        &kp SPACE       &kp LCTRL                                                                          &kp BSPC        &sl SYMBOLMAC   &trans    
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -937,12 +950,12 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        empty_1 {
-            display-name = "Empty";
+        function {
+            display-name = "Function";
             bindings = <
-&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
-&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
-&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &kp F1              &kp F2              &kp F3              &kp F4              &kp F5                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &kp F6              &kp F7              &kp F8              &kp F8                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &kp F9              &kp F10             &kp F11             &kp F12              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans    
             >;
 
