@@ -96,7 +96,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Space, s: C}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$', s: V}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: SymbolMac, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: SymbolM, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   Gaming:
   - $$mdi:keyboard-tab$$
@@ -223,7 +223,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: Symbol+, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: Symbol+M, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LCTL
   - {t: 'AltGr+,', s: AltGr+<}
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Sft+=, s: Sft++, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  SymbolMac:
+  SymbolM:
   - {t: Alt+5, s: Alt+%}
   - {t: Sft+., s: Sft+>}
   - {t: 'Sft+]', s: 'Sft+}'}
@@ -272,19 +272,19 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: Symbol+, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: Symbol+M, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LCTL
   - {t: 'AltGr+,', s: AltGr+<}
   - Sft+~
   - {t: /, s: '?'}
   - {t: AltGr+., s: AltGr+>}
-  - '~'
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Gui+., s: Gui+>}
-  - AltGr+F
-  - AltGr+G
+  - Gui+P
+  - {t: 'Alt+[', s: 'Alt+{'}
+  - {t: 'Alt+]', s: 'Alt+}'}
   - {t: Sft+', s: Sft+"}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -301,6 +301,55 @@ layers:
   - AltGr+N
   - {t: Sft+\, s: Sft+|}
   - AltGr+C
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+=, s: Sft++}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+., s: Sft+>}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+Q
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  Symbol+M:
+  - {t: Empty, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Alt+9, s: Alt+(}
+  - {t: Alt+0, s: Alt+)}
+  - {t: '=', s: +}
+  - {t: Alt+7, s: Alt+&}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -593,7 +642,7 @@ combos:
   k: F2
 - p: [3, 15, 17]
   k: F5
-  l: [Base, Mac, Space, Symbol, SymbolMac, Symbol+]
+  l: [Base, Mac, Space, Symbol, SymbolM, Symbol+]
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
   l: [Base, Mac]
