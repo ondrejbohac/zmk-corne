@@ -748,7 +748,7 @@ combos:
   k: Gui+L
   l: [Base]
 - p: [11, 12]
-  k: Gui+NUBS
+  k: Gui+"
   l: [Mac]
 - p: [14, 18]
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
