@@ -60,7 +60,7 @@
 //tab 0,    q 1,    w 2,   e 3,    r 4,    t 5,    y 7,    u 8,    i 9,    o 10,    p 11,   ' 12
 //shift 13, a 14,   s 15,  d 16,   f 17,   g 18,   h 22,   j 23,   k 24,   l 25,   ; 26,   enter 27
 //esc 28,   z 29,   x 30,  c 31,   v 32,   b 33,   n 36,   m 37,   , 38,   . 39,   / 40,   shift 40
-//                                 41 42 43,           44 45 46
+//                                 42 43 44,           45 46 47
 
 / {
     combos {
@@ -106,7 +106,7 @@
 
        combo_win_e {
             timeout-ms = <30>;
-            key-positions = <3 43>;
+            key-positions = <3 44>;
             bindings = <&kp LG(E)>;
             layers = <0>;  
         };
@@ -487,7 +487,7 @@
         wordl: wordl {
             compatible = "zmk,behavior-mod-morph"; 
             #binding-cells = <0>;
-            bindings = <&kp LC(LEFT) >, <&kp HOME>;
+            bindings = <&kp HOME >, <&kp HOME>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
@@ -496,7 +496,7 @@
         wordr: wordr {
             compatible = "zmk,behavior-mod-morph"; 
             #binding-cells = <0>;
-            bindings = <&kp LC(RIGHT) >, <&kp END>;
+            bindings = <&kp END >, <&kp END>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
@@ -759,10 +759,10 @@
         symbol_mac {
             display-name = "SymbolMac";
             bindings = <
-&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
-&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
-&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
-                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans    
+&kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
+&bhm LSHFT RA(X)    &kp RA(SEMI)        &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS          &none  
+&kp LCTL            &kp RA(COMMA)       &kp RA(W)           &kp FSLH            &kp RA(DOT)         &kp RA(Q)           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &kp LS(SQT)         &none              &none  
+                                                            &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none   
             >;
 
             sensor-bindings = <&scroll_encoder>;
