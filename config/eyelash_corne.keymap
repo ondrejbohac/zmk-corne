@@ -759,9 +759,9 @@
         symbol_mac {
             display-name = "SymbolMac";
             bindings = <
-&kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp LA(N4)                                        &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
+&kp LA(N5)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp LA(N4)                                        &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
 &bhm LSHFT LA(N3)   &kp RA(SEMI)        &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS          &none  
-&kp LCTL            &kp RA(COMMA)       &kp LS(GT)          &kp FSLH            &kp RA(DOT)         &kp GT              &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &kp LS(SQT)         &none              &none  
+&kp LCTL            &kp RA(COMMA)       &kp LS(TILDE)       &kp FSLH            &kp RA(DOT)         &kp TILDE           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &kp LS(SQT)         &none              &none  
                                                             &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none   
             >;
 
