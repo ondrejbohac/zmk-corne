@@ -749,7 +749,7 @@ combos:
   l: [Base]
 - p: [11, 12]
   k: Gui+'
-  l: [Base]
+  l: [Mac]
 - p: [14, 18]
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
 - p: [3, 4]
