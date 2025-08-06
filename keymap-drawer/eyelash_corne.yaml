@@ -246,7 +246,7 @@ layers:
   - {t: Sft+=, s: Sft++, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SymbolMac:
-  - {t: AltGr+1, s: AltGr+!}
+  - {t: Alt+5, s: Alt+%}
   - {t: Sft+., s: Sft+>}
   - {t: 'Sft+]', s: 'Sft+}'}
   - {t: ']', s: '}'}
@@ -276,10 +276,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LCTL
   - {t: 'AltGr+,', s: AltGr+<}
-  - Sft+>
+  - Sft+~
   - {t: /, s: '?'}
   - {t: AltGr+., s: AltGr+>}
-  - '>'
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+., s: Gui+>}
