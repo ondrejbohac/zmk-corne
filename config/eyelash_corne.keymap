@@ -516,7 +516,7 @@
             compatible = "zmk,behavior-mod-morph"; 
             #binding-cells = <0>;
             bindings = <&kp HOME >, <&kp HOME>;
-            mods = <(MOD_GUI|MOD_GUI)>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
         };
     };
 
