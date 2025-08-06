@@ -143,7 +143,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
-  - LCTL
+  - LGUI
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Symbol, h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -251,7 +251,7 @@ layers:
   - {t: 'Sft+]', s: 'Sft+}'}
   - {t: ']', s: '}'}
   - 'Sft+:'
-  - {t: AltGr+;, s: 'AltGr+:'}
+  - {t: Alt+4, s: Alt+$}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
   - {t: HOME, s: HOME}
@@ -444,9 +444,9 @@ layers:
   E_Layer_Mac:
   - {t: Gaming, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+Gui+$$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - Ctl+Gui+$$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
   - Ctl+Z
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
@@ -455,8 +455,8 @@ layers:
   - RGB SAI
   - RGB HUI
   - RGB TOG
-  - Gui+$$mdi:keyboard-tab$$
-  - Ctl+F
+  - Ctl+$$mdi:arrow-up-bold$$
+  - {t: F, h: '$$mdi:apple-keyboard-command$$'}
   - Gui+Sft+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Gui+Sft+$$mdi:arrow-right-bold$$
@@ -485,7 +485,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-next$$
-  - {t: Meh+., s: Meh+>}
+  - Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&winswitch'
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
