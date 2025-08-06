@@ -259,7 +259,7 @@ layers:
   - {t: END, s: END}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: AltGr+X, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: Alt+4, h: '$$mdi:apple-keyboard-shift$$', s: Alt+$}
   - {t: AltGr+;, s: 'AltGr+:'}
   - {t: '-', s: _}
   - {t: Sft+/, h: LSFT, s: Sft+/}
@@ -276,10 +276,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LCTL
   - {t: 'AltGr+,', s: AltGr+<}
-  - AltGr+W
+  - {t: Sft+\, s: Sft+|}
   - {t: /, s: '?'}
   - {t: AltGr+., s: AltGr+>}
-  - AltGr+Q
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+., s: Gui+>}
