@@ -864,7 +864,7 @@
             display-name = "SpaceM";
             bindings = <
 &kp LC(F12)         &kp LG(TAB)        &kp HOME             &kp UP              &kp END             &kp PSCRN                                         &trans                       &none               &msc SCRL_UP        &mmv MOVE_UP        &msc SCRL_DOWN      &kp F12             &none
-&kp LC(LS(F12))     &kp LGUI           &kp LEFT             &kp DOWN            &kp RIGHT           &kp LA(Q)                         &trans          &trans     &trans            &msc SCRL_LEFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_RIGHT     &none
+&kp LC(LS(F12))     &kp LGUI           &kp LEFT             &kp DOWN            &kp RIGHT           &kp LG(Q)                         &trans          &trans     &trans            &msc SCRL_LEFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_RIGHT     &none
 &kp LCTL            &none              &kp LBKT             &kp RBKT            &none               &none               &trans                        &trans                       &kp C_VOL_DN        &kp C_PREV          &kp C_PP            &kp C_NEXT          &kp C_VOL_UP        &none
                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans   
             >;
