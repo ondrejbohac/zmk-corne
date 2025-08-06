@@ -184,11 +184,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - VOL DN
   - PREV
   - $$mdi:play-pause$$
   - NEXT
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - VOL UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -233,11 +233,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - VOL DN
   - PREV
   - $$mdi:play-pause$$
   - NEXT
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - VOL UP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
