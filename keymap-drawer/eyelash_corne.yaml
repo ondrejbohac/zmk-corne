@@ -27,7 +27,7 @@ layers:
   - {t: J, h: LCTL, s: J}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$', s: K}
   - L
-  - {t: '=', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
+  - {t: Sft+\, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-esc$$
   - {t: Z, s: Y}
