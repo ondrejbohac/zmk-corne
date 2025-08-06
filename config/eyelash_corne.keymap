@@ -589,11 +589,21 @@
         hyper_exclam: hyper_exclam {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
+            bindings = <&bhm LS(LA(LG(LCTRL))) LS(BSLH)>, <&kp SQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT)>;
+        };
+    }; 
+
+    behavior {
+        hyper_exclam_mac: hyper_exclam_mac {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
             bindings = <&bhm LS(LA(LG(LCTRL))) EQUAL>, <&kp SQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_LSFT)>;
         };
-    };
+    }; 
 
     behaviors {
         ctrl_z: ctrl_z {
@@ -806,7 +816,7 @@
             display-name = "Mac";
             bindings = <
 &trans              &trans              &lt WLAYERMAC W     &lt ELAYERMAC E     &trans              &trans                                            &trans                       &trans              &trans              &lt FUNCTION I      &trans              &trans                  &quotation      
-&trans              &trans              &trans              &trans              &mod_f_mac          &trans                            &trans          &trans     &trans            &trans              &mod_j_mac          &trans              &trans              &hyper_exclam           &kp ENTER
+&trans              &trans              &trans              &trans              &mod_f_mac          &trans                            &trans          &trans     &trans            &trans              &mod_j_mac          &trans              &trans              &hyper_exclam_mac       &kp ENTER
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans                  &trans    
                                                             &ctrl_x_mac         &ctrl_c_mac         &ctrl_v_mac                                                                    &mac_bspc           &sl SYMBOLMAC       &trans    
             >;
