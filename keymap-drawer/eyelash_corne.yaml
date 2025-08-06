@@ -27,7 +27,7 @@ layers:
   - {t: J, h: LCTL, s: J}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$', s: K}
   - L
-  - {t: ;, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
+  - {t: '=', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-esc$$
   - {t: Z, s: Y}
@@ -62,7 +62,7 @@ layers:
   - {t: I, h: Function}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Sft+\, s: ;}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -76,7 +76,7 @@ layers:
   - {t: J, h: LGUI, s: J}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ;, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
+  - {t: '=', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
