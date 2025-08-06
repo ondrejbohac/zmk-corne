@@ -869,7 +869,7 @@
         symbol_plus {
             display-name = "Symbol+";
             bindings = <
-&tog MACRO          &none               &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
+&none               &none               &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
 &trans              &kp LS(DOT)         &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &kp RA(Q)           &trans                                                                         &trans              &trans              &trans     
@@ -881,7 +881,7 @@
         symbol_plus_mac {
             display-name = "Symbol+M";
             bindings = <
-&tog MACRO          &none               &kp LA(N9)          &kp LA(N0)          &kp EQUAL           &kp LA(N7)                                        &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
+&none               &none               &kp LA(N9)          &kp LA(N0)          &kp EQUAL           &kp LA(N7)                                        &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
 &trans              &kp LS(DOT)         &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &kp RA(Q)           &trans                                                                         &trans              &trans              &trans     
