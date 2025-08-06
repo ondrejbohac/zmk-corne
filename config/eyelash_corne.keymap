@@ -14,16 +14,17 @@
 #define MAC 1
 #define GAMING 2
 #define SPACELAYER 3
-#define SYMBOL 4
-#define SYMBOLMAC 5
-#define SYMBOLPLUS 6
+#define SPACELAYER 4
+#define SYMBOL 5
+#define SYMBOLMAC 6
 #define SYMBOLPLUS 7
-#define WLAYER 8
-#define WLAYERMAC 9
-#define ELAYER 10
-#define ELAYERMAC 11
-#define NUMBERS 12
-#define MACRO 13
+#define SYMBOLPLUS 8
+#define WLAYER 9
+#define WLAYERMAC 10
+#define ELAYER 11
+#define ELAYERMAC 12
+#define NUMBERS 13
+#define MACRO 14
 
 // Caps Word
 &caps_word {
@@ -731,7 +732,7 @@
             display-name = "Mac";
             bindings = <
 &trans              &trans              &trans              &lt ELAYERMAC E     &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
-&trans              &trans              &trans              &trans              &mod_f_mac          &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &mod_f_mac          &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &bhm LS(LA(LG(LC))) ENTER 
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &ctrl_x_mac         &ctrl_c_mac         &ctrl_v_mac                                                                    &trans              &sl SYMBOLMAC       &trans    
             >;
@@ -751,7 +752,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        raise_layer {
+        space_layer {
             display-name = "Space";
             bindings = <
 &kp LC(F12)         &kp LG(TAB)        &kp HOME             &kp UP              &kp END             &kp PSCRN                                         &trans                       &none               &msc SCRL_UP        &mmv MOVE_UP        &msc SCRL_DOWN      &kp F12             &none
@@ -763,11 +764,23 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
+        space_layer_mac {
+            display-name = "SpaceM";
+            bindings = <
+&kp LC(F12)         &kp LG(TAB)        &kp HOME             &kp UP              &kp END             &kp PSCRN                                         &trans                       &none               &msc SCRL_UP        &mmv MOVE_UP        &msc SCRL_DOWN      &kp F12             &none
+&kp LC(LS(F12))     &kp LGUI           &kp LEFT             &kp DOWN            &kp RIGHT           &kp LA(Q)                        &trans          &trans     &trans            &msc SCRL_LEFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_RIGHT      &none
+&kp LCTL            &none              &kp LBKT             &kp RBKT            &none               &none               &trans                        &trans                       &none               &none               &none               &none               &none               &none
+                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans   
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
         symbol {
             display-name = "Symbol";
             bindings = <
-&kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
-&bhm LSHFT RA(X)    &kp GRAVE           &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS          &none  
+&kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none              &none
+&bhm LSHFT RA(X)    &kp GRAVE           &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS     &none  
 &kp LCTL            &kp RA(COMMA)       &kp RA(W)           &kp FSLH            &kp RA(DOT)         &kp RA(Q)           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &kp LS(SQT)         &none              &none  
                                                             &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none
             >;
@@ -778,8 +791,8 @@
         symbol_mac {
             display-name = "SymbolM";
             bindings = <
-&kp LA(N5)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp LA(N4)                                        &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none               &none
-&bhm LSHFT LA(N3)   &kp RA(SEMI)        &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS          &none  
+&kp LA(N5)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp LA(N4)                                        &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none              &none
+&bhm LSHFT LA(N3)   &kp RA(SEMI)        &kp MINUS           &mod_und            &mod_at_mac         &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS     &none  
 &kp LCTL            &kp RA(COMMA)       &kp LS(TILDE)       &kp FSLH            &kp RA(DOT)         &kp GRAVE           &trans                        &trans                       &kp LG(P)           &kp LA(LBKT)        &kp LA(RBKT)        &kp LS(SQT)         &none              &none  
                                                             &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none   
             >;
