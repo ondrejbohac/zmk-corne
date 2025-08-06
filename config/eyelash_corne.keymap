@@ -19,10 +19,11 @@
 #define SYMBOLPLUS 6
 #define SYMBOLPLUS 7
 #define WLAYER 8
-#define ELAYER 9
-#define ELAYERMAC 10
-#define NUMBERS 11
-#define MACRO 12
+#define WLAYERMAC 9
+#define ELAYER 10
+#define ELAYERMAC 11
+#define NUMBERS 12
+#define MACRO 13
 
 // Caps Word
 &caps_word {
@@ -683,6 +684,16 @@
         };
 
     behaviors {
+            mod_at_mac: mod_at_mac {
+                compatible = "zmk,behavior-mod-morph";
+                #binding-cells = <0>;
+                bindings = <&bhm LGUI LA(N2)>, <&kp LA(N2)>;
+                mods = <(MOD_LSFT)>;
+                keep-mods = <(MOD_LSFT)>;
+            };
+        };
+
+    behaviors {
             mod_und: mod_und {
                 compatible = "zmk,behavior-mod-morph";
                 #binding-cells = <0>;
@@ -805,6 +816,18 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
+        w_layer_mac {
+            display-name = "W_LayerM";
+            bindings = <  
+&none               &none               &kp DEL             &kp DEL             &kp H               &kp LS(SLASH)                                     &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none
+&kp LC(UP)          &kp N               &kp MINUS           &kp K               &kp BSPC            &kp J                             &trans          &trans     &trans            &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none  
+&none               &none               &none               &kp LC(FSLH)        &kp LC(N1)          &kp L               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none
+                                                            &kp PLUS            &kp LA(SPACE)       &kp ENTER                                                                      &kp BSPC            &kp KP_N0           &kp TAB   
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
         e_layer {
             display-name = "E_Layer";
             bindings = <  
@@ -820,8 +843,8 @@
         e_layer_mac {
             display-name = "E_Layer_Mac";
             bindings = <  
-&tog GAMING         &none               &kp LC(LEFT)        &none               &kp LC(RIGHT)       &kp LC(Z)                                            &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
-&kp LC(UP)          &kp LG(F)           &kp LG(LS(LEFT))    &none               &kp LG(LS(RIGHT))   &kp LC(Y)                            &trans          &trans     &trans            &rgb_ug RGB_EFR       &rgb_ug RGB_SPD     &rgb_ug RGB_BRD     &rgb_ug RGB_SAD     &rgb_ug RGB_HUD     &trans    
+&tog GAMING         &none               &kp LC(LEFT)        &none               &kp LC(RIGHT)       &kp LS(LA(Y))                                        &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
+&kp LC(UP)          &kp LG(F)           &kp LG(LS(LEFT))    &none               &kp LG(LS(RIGHT))   &kp LA(Y)                            &trans          &trans     &trans            &rgb_ug RGB_EFR       &rgb_ug RGB_SPD     &rgb_ug RGB_BRD     &rgb_ug RGB_SAD     &rgb_ug RGB_HUD     &trans    
 &none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &trans       
                                                             &kp C_NEXT          &kp LG(SPACE)       &kp ENTER                                                                         &winswitch            &bt BT_SEL 2        &bt BT_SEL 3
             >;
