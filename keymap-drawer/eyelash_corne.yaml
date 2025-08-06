@@ -205,9 +205,9 @@ layers:
   - {t: AltGr+;, s: 'AltGr+:'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
-  - {t: 'Ctl+$$mdi:arrow-left-bold$$', s: HOME}
+  - {t: HOME, s: HOME}
   - $$mdi:arrow-up-bold$$
-  - {t: 'Ctl+$$mdi:arrow-right-bold$$', s: END}
+  - {t: END, s: END}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: AltGr+X, h: '$$mdi:apple-keyboard-shift$$'}
@@ -246,54 +246,54 @@ layers:
   - {t: Sft+=, s: Sft++, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SymbolMac:
+  - {t: AltGr+1, s: AltGr+!}
+  - {t: Sft+., s: Sft+>}
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - {t: ']', s: '}'}
+  - 'Sft+:'
+  - {t: AltGr+;, s: 'AltGr+:'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, s: '?'}
+  - {t: HOME, s: HOME}
+  - $$mdi:arrow-up-bold$$
+  - {t: END, s: END}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: AltGr+X, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: AltGr+;, s: 'AltGr+:'}
+  - {t: '-', s: _}
+  - {t: Sft+/, h: LSFT, s: Sft+/}
+  - {t: AltGr+V, h: LCTL, s: AltGr+V}
+  - KP MULTIPLY
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+{
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: Symbol+, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LCTL
+  - {t: 'AltGr+,', s: AltGr+<}
+  - AltGr+W
+  - {t: /, s: '?'}
+  - {t: AltGr+., s: AltGr+>}
+  - AltGr+Q
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Gui+., s: Gui+>}
+  - AltGr+F
+  - AltGr+G
+  - {t: Sft+', s: Sft+"}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '1', s: '!'}
+  - $$mdi:keyboard-space$$
+  - {t: Sft+-, s: Sft+_}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: Sft+=, s: Sft++, type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   Symbol+:
   - {t: Empty, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -604,7 +604,7 @@ combos:
 - p: [3, 4]
   k: M
   l: [Base, Mac]
-- p: [3, 43]
+- p: [3, 44]
   k: Gui+E
   l: [Base]
 - p: [0, 1]
