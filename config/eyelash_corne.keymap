@@ -92,6 +92,14 @@
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp LG(L)>;
+            layers = <0>; 
+        };
+
+        combo_lock_mac {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp LG(SQT)>;
+            layers = <0>; 
         };
 
         combo_sound {
@@ -551,7 +559,7 @@
         mac_bspc: mac_bspc {
             compatible = "zmk,behavior-mod-morph"; 
             #binding-cells = <0>;
-            bindings = <&kp BKSPC >, <&kp LA(BKSPC)>;
+            bindings = <&kp BSPC >, <&kp LA(BSPC)>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
     };
