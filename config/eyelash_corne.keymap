@@ -14,7 +14,7 @@
 #define MAC 1
 #define GAMING 2
 #define SPACELAYER 3
-#define SPACELAYER 4
+#define SPACELAYERMAC 4
 #define SYMBOL 5
 #define SYMBOLMAC 6
 #define SYMBOLPLUS 7
@@ -555,7 +555,7 @@
         ctrl_c_mac: ctrl_c_mac {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lkp SPACELAYER SPACE>, <&kp C>;
+            bindings = <&lkp SPACELAYERMAC SPACE>, <&kp C>;
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
         };
