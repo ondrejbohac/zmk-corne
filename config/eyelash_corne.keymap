@@ -27,6 +27,8 @@
 #define NUMBERS 14
 #define FUNCTION 15
 
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 // Caps Word
 &caps_word {
     continue-list = <UNDERSCORE MINUS LS(SLASH) BACKSPACE>;
@@ -60,6 +62,8 @@
     time-to-max-speed-ms = <1000>;
     acceleration-exponent = <2>;
 };
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //tab 0,    q 1,    w 2,   e 3,    r 4,    t 5,    y 7,    u 8,    i 9,    o 10,    p 11,   ' 12
 //shift 13, a 14,   s 15,  d 16,   f 17,   g 18,   h 22,   j 23,   k 24,   l 25,   ; 26,   enter 27
@@ -146,6 +150,8 @@
 
     };
 };
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 / {
     macros {
@@ -378,7 +384,7 @@
     };
 };
 
-
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -395,6 +401,8 @@
     acceleration-exponent = <1>;
     trigger-period-ms = <16>;
 };
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 / {
     rgb_encoder: rgb_encoder {
@@ -949,7 +957,7 @@
             bindings = <  
 &tog GAMING         &none               &kp LC(LG(LEFT))    &none               &kp LC(LG(RIGHT))   &kp LC(Z)                                            &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
 &kp LG(TAB)         &kp LC(F)           &kp LG(LS(LEFT))    &none               &kp LG(LS(RIGHT))   &kp LC(Y)                            &trans          &trans     &trans            &rgb_ug RGB_EFR       &rgb_ug RGB_SPD     &rgb_ug RGB_BRD     &rgb_ug RGB_SAD     &rgb_ug RGB_HUD     &trans    
-&none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &trans       
+&none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &bt BT_CLR       
                                                             &kp C_NEXT          &kp LS(LC(LA(DOT))) &kp ENTER                                                                         &macswitch            &bt BT_SEL 2        &bt BT_SEL 3
             >;
 
@@ -961,7 +969,7 @@
             bindings = <  
 &tog GAMING         &none               &kp LC(LEFT)        &none               &kp LC(RIGHT)       &kp LG(LS(Y))                                        &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
 &kp LC(UP)          &kp LG(F)           &kp LG(LS(LEFT))    &none               &kp LG(LS(RIGHT))   &kp LG(Y)                            &trans          &trans     &trans            &rgb_ug RGB_EFR       &rgb_ug RGB_SPD     &rgb_ug RGB_BRD     &rgb_ug RGB_SAD     &rgb_ug RGB_HUD     &trans    
-&none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &trans       
+&none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &bt BT_CLR   
                                                             &kp C_NEXT          &kp LG(SPACE)       &kp ENTER                                                                         &winswitch            &bt BT_SEL 2        &bt BT_SEL 3
             >;
 
@@ -971,7 +979,7 @@
         numbers {
             display-name = "Numbers";
             bindings = <
-&buildl             &none               &kp KP_PLUS         &kp KP_MULTIPLY     &kp KP_DIVIDE       &kp MINUS                                         &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none 
+&buildl             &none               &kp KP_PLUS         &kp KP_MULTIPLY     &kp KP_DIVIDE       &kp MINUS                                         &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &kp KP_NLCK 
 &none               &kp TAB             &kp KP_MINUS        &kp DOT             &kp SPACE           &kp LS(DOT)                       &buildr         &trans     &bootloader       &td1                &kp KP_N4           &kp KP_N5           &kp KP_N6           &none               &none
 &none               &none               &none               &kp COMMA           &none               &none               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none 
                                                             &trans              &trans              &kp DOT                                                                        &kp BSPC            &kp KP_N0           &kp TAB     
@@ -1007,8 +1015,9 @@
     };
 };
 
-
-//         layer_9 {
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//         layer_name {
 //             display-name = "Empty";
 //             bindings = <
 // &trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
@@ -1016,5 +1025,6 @@
 // &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
 //                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans    
 //             >
-
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
