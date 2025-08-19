@@ -607,7 +607,7 @@
         hyper_exclam_mac: hyper_exclam_mac {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&bhm LS(LA(LG(LCTRL))) EQUAL>, <&kp SQT>;
+            bindings = <&bhm LS(LA(LG(LCTRL))) RA(SQT)>, <&kp SQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_LSFT)>;
         };
@@ -618,7 +618,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp Z>, <&kp Y>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL)>; 
             keep-mods = <(MOD_LCTL)>;
         };
     }; 
@@ -896,7 +896,7 @@
             display-name = "SymbolM";
             bindings = <
 &kp LA(N5)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp LA(N4)                                        &trans                       &kp FSLH            &wordl_mac          &kp UP              &wordr_mac          &none              &none
-&bhm LSHFT LA(N3)   &kp RA(SEMI)        &kp MINUS           &mod_und            &mod_at_mac         &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &left_mac           &kp DOWN            &right_mac          &sl SYMBOLPLUSMAC  &none  
+&bhm LSHFT LA(N3)   &kp RA(SEMI)        &kp MINUS           &mod_und            &mod_at_mac         &kp LS(BSLH)                      &trans          &trans     &trans            &kp LS(LBRC)        &left_mac           &kp DOWN            &right_mac          &sl SYMBOLPLUSMAC  &none  
 &kp LCTL            &kp RA(COMMA)       &kp LS(TILDE)       &kp FSLH            &kp RA(DOT)         &kp GRAVE           &trans                        &trans                       &kp LG(P)           &kp LA(LBKT)        &kp LA(RBKT)        &kp LS(SQT)         &none              &none  
                                                             &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none   
             >;
