@@ -76,7 +76,7 @@ layers:
   - {t: J, h: LGUI, s: J}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
+  - {t: AltGr+', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$', s: ''''}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -362,7 +362,7 @@ layers:
   - {t: '-', s: _}
   - {t: Sft+/, h: LSFT, s: Sft+/}
   - {t: Alt+2, h: LGUI, s: Alt+2}
-  - KP MULTIPLY
+  - {t: Sft+\, s: Sft+|}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
