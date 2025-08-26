@@ -362,7 +362,7 @@ layers:
   - {t: '-', s: _}
   - {t: Sft+/, h: LSFT, s: Sft+/}
   - {t: Alt+2, h: LGUI, s: Alt+2}
-  - {t: Sft+\, s: Sft+|}
+  - {t: Alt+8, s: Alt+*}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
