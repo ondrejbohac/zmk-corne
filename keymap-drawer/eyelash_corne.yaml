@@ -100,7 +100,7 @@ layers:
   - PRINTSCREEN
   Functions:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PRINTSCREEN
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
