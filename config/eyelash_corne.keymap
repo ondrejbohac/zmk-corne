@@ -760,10 +760,10 @@
         layer_2 {
             display-name = "Layer 2";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &trans  &kp HOME  &kp UP_ARROW  &kp END    &kp PG_UP                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &ctrl_c       &ctrl_v    &ctrl_x        &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans        &trans     &trans                                           &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
