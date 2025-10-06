@@ -48,12 +48,12 @@ layers:
   - {t: '$$mdi:arrow-right-bold$$', h: Media}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: 'Ctl+$$mdi:keyboard-space$$', h: Czech}
+  - Ctl+$$mdi:keyboard-space$$
   Symbols:
   - {t: '`', s: '~'}
   - '{'
-  - '{'
   - {t: '[', s: '{'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
   - '}'
   - $$mdi:pan-up$$
@@ -80,8 +80,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - <
-  - <
   - (
+  - {t: '$$mdi:transfer$$', type: trans}
   - )
   - '>'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -177,7 +177,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
-  - RGB EFF
+  - RGB COLOR HSB(0,100,50)
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: Base, h: toggle}
-  f keys:
+  Function:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -342,7 +342,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 2]
   k: F2
@@ -357,9 +357,6 @@ combos:
   l: [Base]
 - p: [14, 18]
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
-- p: [3, 4]
-  k: M
-  l: [Base, Symbols]
 - p: [3, 44]
   k: Gui+E
   l: [Base]
