@@ -43,13 +43,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:arrow-left-bold$$', h: symbols}
-  - {t: '$$mdi:keyboard-space$$', h: Layer 2}
-  - {t: '$$mdi:arrow-right-bold$$', h: media}
+  - {t: '$$mdi:arrow-left-bold$$', h: Symbols}
+  - {t: '$$mdi:keyboard-space$$', h: Functions}
+  - {t: '$$mdi:arrow-right-bold$$', h: Media}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - LEFT WIN
-  symbols:
+  - {t: 'Ctl+$$mdi:keyboard-space$$', h: Czech}
+  Symbols:
   - {t: '`', s: '~'}
   - '{'
   - {t: '[', s: '{'}
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
-  Layer 2:
+  Functions:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
@@ -128,8 +128,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Z
+  - Ctl+Y
   - Ctl+C
   - Ctl+V
   - Ctl+X
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  media:
+  Media:
   - RGB HUI
   - RGB SAI
   - RGB BRI
@@ -245,7 +245,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: Base, h: toggle}
-  Function:
+  f keys:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -294,15 +294,64 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  Czech:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AltGr+1
+  - AltGr+2
+  - {t: AltGr+3, s: AltGr+#}
+  - {t: AltGr+4, s: AltGr+$}
+  - {t: AltGr+5, s: AltGr+%}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: AltGr+6, s: AltGr+^}
+  - {t: AltGr+7, s: AltGr+&}
+  - {t: AltGr+8, s: AltGr+*}
+  - {t: AltGr+9, s: AltGr+(}
+  - {t: AltGr+0, s: AltGr+)}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
 combos:
 - p: [1, 2]
   k: F2
 - p: [3, 15, 17]
   k: F5
-  l: [Base, symbols, media, Gaming]
+  l: [Base, Symbols, Media, Gaming]
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
-  l: [Base, symbols]
+  l: [Base, Symbols]
 - p: [11, 12]
   k: Gui+L
   l: [Base]
@@ -310,10 +359,10 @@ combos:
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
 - p: [3, 4]
   k: M
-  l: [Base, symbols]
+  l: [Base, Symbols]
 - p: [3, 44]
   k: Gui+E
   l: [Base]
 - p: [0, 1]
   k: {t: Gaming, h: toggle}
-  l: [Base, symbols, Layer 2]
+  l: [Base, Symbols, Functions]
