@@ -441,38 +441,12 @@
     };
 
     behaviors {
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;    // <---[[moderate duration]]
-            quick-tap-ms = <200>;
-
-            //require-prior-idle-ms = <125>;
-
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-
-            hold-while-undecided;
-        };
     };
 
     behaviors {
     };
 
     behaviors {
-        ebhm: enhanced_balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;    // <---[[moderate duration]]
-            quick-tap-ms = <200>;
-
-            //require-prior-idle-ms = <125>;
-
-            flavor = "balanced";
-            bindings = <&kp>, <&sl>;
-
-            hold-while-undecided;
-        };
     };
 
     behaviors {
@@ -499,63 +473,21 @@
     };
 
     behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp KP_MULTIPLY>, <&kp KP_DIVIDE>;
-        };
     };
 
     behaviors {
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&kp KP_MINUS>, <&kp KP_PLUS>;
-        };
     };
 
     behaviors {
-        quotation: quotation {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LS(BSLH)>, <&kp SEMI>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
     };
 
     behaviors {
-        wordl: wordl {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp HOME >, <&kp HOME>;
-
-            mods = <(MOD_LCTL|MOD_RCTL)>;
-        };
     };
 
     behaviors {
-        wordr: wordr {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp END >, <&kp END>;
-
-            mods = <(MOD_LCTL|MOD_RCTL)>;
-        };
     };
 
     behaviors {
-        bspc_hacek: backspace_hacek {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp ENTER>, <&kp EQUAL>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
     };
 
     behaviors {
@@ -637,91 +569,27 @@
     };
 
     behaviors {
-        mod_f: mod_f {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp F>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
     };
 
     behaviors {
-        mod_g: mod_g {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp G>;
-
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
-        };
     };
 
     behaviors {
-        mod_t: mod_t {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp T>;
-
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
-            keep-mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT|MOD_LCTL)>;
-        };
     };
 
     behaviors {
-        mod_d: mod_d {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp D>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
     };
 
     behaviors {
-        mod_j: mod_j {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp J>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
     };
 
     behaviors {
-        mod_k: mod_k {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp K>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
     };
 
     behaviors {
-        mod_at: mod_at {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp RA(V)>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
     };
 
     behaviors {
-        mod_und: mod_und {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp LS(SLASH)>;
-
-            mods = <(MOD_LSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
     };
 
     // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -732,10 +600,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB              &kp Q    &kp W  &kp E             &kp R        &kp T                                      &mmv MOVE_UP                     &kp Y     &kp U      &kp I      &kp O    &kp P          &kp BACKSLASH
-&kp ESC              &kp A    &kp S  &mod_d            &mod_f       &mod_g                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H     &mod_j     &mod_k     &kp L    &kp SEMICOLON  &kp SQT
-&lshift LSHFT LSHFT  &ctrl_z  &kp X  &kp C             &kp V        &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
-                                     &lt 1 LEFT_ARROW  &lt 2 SPACE  &lt 3 RIGHT                                                                 &kp BSPC  &kp ENTER  &tog 0
+&kp TAB              &kp Q  &kp W           &kp E             &kp R         &kp T                                      &mmv MOVE_UP                     &kp Y     &kp U         &kp I        &kp O            &kp P          &kp BACKSLASH
+&kp ESC              &kp A  &mt LEFT_ALT S  &mt LCTRL D       &mt LSHIFT F  &kp G                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H     &mt RSHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp SEMICOLON  &kp SQT
+&lshift LSHFT LSHFT  &kp Z  &kp X           &kp C             &kp V         &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N     &kp M         &kp COMMA    &kp DOT          &kp FSLH       &kp RSHFT
+                                            &lt 1 LEFT_ARROW  &lt 2 SPACE   &lt 3 RIGHT                                                                 &kp BSPC  &kp ENTER     &tog 0
             >;
 
             sensor-bindings = <&scroll_encoder>;
