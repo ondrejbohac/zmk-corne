@@ -11,21 +11,9 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
-#define MAC 1
-#define GAMING 2
-#define GAMINGMAC 3
-#define SPACELAYER 4
-#define SPACELAYERMAC 5
-#define SYMBOL 6
-#define SYMBOLMAC 7
-#define SYMBOLPLUS 8
-#define SYMBOLPLUSMAC 9
-#define WLAYER 10
-#define WLAYERMAC 11
-#define ELAYER 12
-#define ELAYERMAC 13
-#define NUMBERS 14
-#define FUNCTION 15
+#define LAYER_1 1
+#define LAYER_2 2
+#define LAYER_3 3
 
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -528,50 +516,7 @@
         };
     };
 
-    behaviors {
-        wordl_mac: wordl_mac {
-            compatible = "zmk,behavior-mod-morph"; 
-            #binding-cells = <0>;
-            bindings = <&kp HOME >, <&kp HOME>;
-            mods = <(MOD_LGUI|MOD_RGUI)>;
-        };
-    };
 
-    behaviors {
-        wordr_mac: wordr_mac {
-            compatible = "zmk,behavior-mod-morph"; 
-            #binding-cells = <0>;
-            bindings = <&kp END >, <&kp END>;
-            mods = <(MOD_LGUI|MOD_RGUI)>;
-        };
-    };
-
-    behaviors {
-        left_mac: left_mac {
-            compatible = "zmk,behavior-mod-morph"; 
-            #binding-cells = <0>;
-            bindings = <&kp LEFT >, <&kp LA(LEFT)>;
-            mods = <(MOD_LGUI|MOD_RGUI)>;
-        };
-    };
-
-    behaviors {
-        right_mac: right_mac {
-            compatible = "zmk,behavior-mod-morph"; 
-            #binding-cells = <0>;
-            bindings = <&kp RIGHT >, <&kp LA(RIGHT)>;
-            mods = <(MOD_LGUI|MOD_RGUI)>;
-        };
-    };
-
-    behaviors {
-        mac_bspc: mac_bspc {
-            compatible = "zmk,behavior-mod-morph"; 
-            #binding-cells = <0>;
-            bindings = <&kp BSPC >, <&kp LA(BSPC)>;
-            mods = <(MOD_LGUI|MOD_RGUI)>;
-        };
-    };
 
     behaviors {
         bspc_hacek: backspace_hacek {
@@ -603,15 +548,7 @@
         };
     }; 
 
-    behavior {
-        hyper_exclam_mac: hyper_exclam_mac {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LS(LA(LG(LCTRL))) RA(SQT)>, <&kp SQT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT)>;
-        };
-    }; 
+
 
     behaviors {
         ctrl_z: ctrl_z {
@@ -633,15 +570,7 @@
         };
     };
 
-    behaviors {
-        ctrl_c_mac: ctrl_c_mac {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&lkp SPACELAYERMAC SPACE>, <&kp C>;
-            mods = <(MOD_LGUI)>;
-            keep-mods = <(MOD_LGUI)>;
-        };
-    };
+
 
     behaviors {
         bspc_del: bspc_del {
@@ -663,15 +592,7 @@
         };
     };
     
-      behaviors {
-        ctrl_v_mac: ctrl_v_mac {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&bhm LALT ESC>, <&kp V>;
-            mods = <(MOD_LGUI)>;
-            keep-mods = <(MOD_LGUI)>;
-        };
-    };
+
 
     behaviors {
             ctrl_x: ctrl_x {
@@ -683,15 +604,7 @@
             };
         };
 
-    behaviors {
-            ctrl_x_mac: ctrl_x_mac {
-                compatible = "zmk,behavior-mod-morph";
-                #binding-cells = <0>;
-                bindings = <&sl NUMBERS>, <&kp X>;
-                mods = <(MOD_LGUI)>;
-                keep-mods = <(MOD_LGUI)>;
-            };
-        };
+
 
     behaviors {
             mod_f: mod_f {
@@ -703,15 +616,7 @@
             };
         };
 
-    behaviors {
-            mod_f_mac: mod_f_mac {
-                compatible = "zmk,behavior-mod-morph";
-                #binding-cells = <0>;
-                bindings = <&bhm LGUI F>, <&kp F>;
-                mods = <(MOD_LSFT)>;
-                keep-mods = <(MOD_LSFT)>;
-            };
-        };
+
         
     behaviors {
             mod_g: mod_g {
@@ -753,15 +658,7 @@
             };
         };
 
-    behaviors {
-            mod_j_mac: mod_j_mac {
-                compatible = "zmk,behavior-mod-morph";
-                #binding-cells = <0>;
-                bindings = <&bhm LGUI J>, <&kp J>;
-                mods = <(MOD_LSFT)>;
-                keep-mods = <(MOD_LSFT)>;
-            };
-        };
+
 
     behaviors {
             mod_k: mod_k {
@@ -783,15 +680,7 @@
             };
         };
 
-    behaviors {
-            mod_at_mac: mod_at_mac {
-                compatible = "zmk,behavior-mod-morph";
-                #binding-cells = <0>;
-                bindings = <&bhm LGUI LA(N2)>, <&kp LA(N2)>;
-                mods = <(MOD_LSFT)>;
-                keep-mods = <(MOD_LSFT)>;
-            };
-        };
+
 
     behaviors {
             mod_und: mod_und {
@@ -811,196 +700,52 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB               &kp Q          &lt WLAYER W   &lt ELAYER E     &kp R          &kp T                                         &mmv MOVE_UP                      &kp Y             &kp U             &lt FUNCTION I  &kp O           &kp P            &quotation
-&lshift LSHFT LSHFT   &kp A          &kp S          &mod_d           &mod_f         &mod_g                        &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H             &mod_j            &mod_k          &kp L           &hyper_exclam    &kp ENTER
-&kp ESC               &ctrl_z        &kp X          &kp C            &kp V          &kp B          &kp C_MUTE                     &mmv MOVE_DOWN                    &kp N             &kp M             &kp COMMA       &kp DOT         &kp FSLH         &kp RSHFT
-                                                    &ctrl_x          &ctrl_c        &ctrl_v                                                                         &kp BSPC          &sl SYMBOL        &tog MAC  
-            >;
-
-             sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        base_mac {
-            display-name = "Mac";
-            bindings = <
-&trans              &trans              &lt WLAYERMAC W     &lt ELAYERMAC E     &trans              &trans                                            &trans                       &trans              &trans              &lt FUNCTION I      &trans              &trans                  &quotation      
-&trans              &trans              &trans              &trans              &mod_f_mac          &trans                            &trans          &trans     &trans            &trans              &mod_j_mac          &trans              &trans              &hyper_exclam_mac       &kp ENTER
-&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans                  &trans    
-                                                            &ctrl_x_mac         &ctrl_c_mac         &ctrl_v_mac                                                                    &mac_bspc           &sl SYMBOLMAC       &trans    
+&kp TAB               &kp Q          &kp W          &kp E            &kp R          &kp T                                         &mmv MOVE_UP                      &kp Y             &kp U             &kp I           &kp O           &kp P            &quotation  
+&kp ESC               &kp A          &kp S          &mod_d           &mod_f         &mod_g                        &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H             &mod_j            &mod_k          &kp L           &hyper_exclam    &kp ENTER
+&lshift LSHFT LSHFT   &ctrl_z        &kp X          &kp C            &kp V          &kp B          &kp C_MUTE                     &mmv MOVE_DOWN                    &kp N             &kp M             &kp COMMA       &kp DOT         &kp FSLH         &kp RSHFT
+                                                    &lt LAYER_1 MOVE_LEFT    &lt LAYER_2 SPACE     &lt LAYER_3 MOVE_RIGHT                                           &kp BSPC          &kp ENTER         &tog MAC  
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        lower_layer {
-            display-name = "Gaming";
+    layer_1 {
+            display-name = "Empty";
             bindings = <
-&kp TAB           &kp Q           &kp W           &kp E           &kp R           &kp T                                            &mmv MOVE_UP                      &kp Y           &kp U           &kp I           &kp O           &kp P           &quotation
-&kp LSHFT         &kp A           &kp S           &kp D           &kp F           &kp G                            &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H           &kp J           &kp K           &kp L           &u_exclam       &kp ENTER
-&kp ESC           &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE                       &mmv MOVE_DOWN                    &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
-                                                  &bhm LALT M     &kp SPACE       &kp LCTRL                                                                          &kp BSPC        &sl SYMBOL       &trans    
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        gaming_mac {
-            display-name = "GamingM";
-            bindings = <
-&kp TAB           &kp Q           &kp W           &kp E           &kp R           &kp T                                            &mmv MOVE_UP                      &kp Y           &kp U           &kp I           &kp O           &kp P           &quotation
-&kp LSHFT         &kp A           &kp S           &kp D           &kp F           &kp G                            &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H           &kp J           &kp K           &kp L           &u_exclam       &bhm LS(LA(LG(LCTRL))) ENTER 
-&kp ESC           &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE                       &mmv MOVE_DOWN                    &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RSHFT
-                                                  &kp LALT        &kp SPACE       &kp LCTRL                                                                          &kp BSPC        &sl SYMBOLMAC   &trans    
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        space_layer {
-            display-name = "Space";
-            bindings = <
-&kp LC(F12)         &kp LG(TAB)        &kp HOME             &kp UP              &kp END             &kp PSCRN                                         &trans                       &none               &msc SCRL_UP        &mmv MOVE_UP        &msc SCRL_DOWN      &kp F12             &none
-&kp LC(LS(F12))     &kp LGUI           &kp LEFT             &kp DOWN            &kp RIGHT           &kp LA(F4)                        &trans          &trans     &trans            &msc SCRL_LEFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_RIGHT     &none
-&kp LCTL            &none              &kp LBKT             &kp RBKT            &none               &none               &trans                        &trans                       &kp C_VOL_DN        &kp C_PREV          &kp C_PP            &kp C_NEXT          &kp C_VOL_UP        &none
-                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans   
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        space_layer_mac {
-            display-name = "SpaceM";
-            bindings = <
-&kp LC(F12)         &kp LG(TAB)        &kp HOME             &kp UP              &kp END             &kp PSCRN                                         &trans                       &none               &msc SCRL_UP        &mmv MOVE_UP        &msc SCRL_DOWN      &kp F12             &none
-&kp LC(LS(F12))     &kp LGUI           &kp LEFT             &kp DOWN            &kp RIGHT           &kp LG(Q)                         &trans          &trans     &trans            &msc SCRL_LEFT      &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_RIGHT     &none
-&kp LCTL            &none              &kp LBKT             &kp RBKT            &none               &none               &trans                        &trans                       &kp C_VOL_DN        &kp C_PREV          &kp C_PP            &kp C_NEXT          &kp C_VOL_UP        &none
-                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans   
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        symbol {
-            display-name = "Symbol";
-            bindings = <
-&kp RA(N1)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp RA(SEMI)                                      &trans                       &kp FSLH            &wordl              &kp UP              &wordr              &none              &none
-&bhm LSHFT RA(X)    &kp GRAVE           &kp MINUS           &mod_und            &mod_at             &kp KP_MULTIPLY                   &trans          &trans     &trans            &kp LS(LBRC)        &kp LEFT            &kp DOWN            &kp RIGHT           &sl SYMBOLPLUS     &none  
-&kp LCTL            &kp RA(COMMA)       &kp RA(W)           &kp FSLH            &kp RA(DOT)         &kp RA(Q)           &trans                        &trans                       &kp LG(DOT)         &kp RA(F)           &kp RA(G)           &kp LS(SQT)         &none              &none  
-                                                            &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        symbol_mac {
-            display-name = "SymbolM";
-            bindings = <
-&kp LA(N5)          &kp LS(DOT)         &kp LS(RBKT)        &kp RBKT            &kp LS(COLON)       &kp LA(N4)                                        &trans                       &kp FSLH            &wordl_mac          &kp UP              &wordr_mac          &none              &none
-&bhm LSHFT LA(N3)   &kp RA(SEMI)        &kp MINUS           &mod_und            &mod_at_mac         &kp LA(N8)                        &trans          &trans     &trans            &kp LS(LBRC)        &left_mac           &kp DOWN            &right_mac          &sl SYMBOLPLUSMAC  &none  
-&kp LCTL            &kp RA(COMMA)       &kp LS(TILDE)       &kp FSLH            &kp RA(DOT)         &kp GRAVE           &trans                        &trans                       &kp LG(P)           &kp LA(LBKT)        &kp LA(RBKT)        &kp LS(SQT)         &none              &none  
-                                                            &kp N1              &kp SPACE           &kp LS(MINUS)                                                                  &kp BACKSPACE       &kp LS(EQUAL)       &none   
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        symbol_plus {
-            display-name = "Symbol+";
-            bindings = <
-&none               &none               &kp RA(B)           &kp RA(N)           &kp LS(BSLH)        &kp RA(C)                                         &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
-&trans              &kp LS(DOT)         &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
 &trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
-                                                            &trans              &kp RA(Q)           &trans                                                                         &trans              &trans              &trans     
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        symbol_plus_mac {
-            display-name = "Symbol+M";
-            bindings = <
-&none               &none               &kp LA(N9)          &kp LA(N0)          &kp EQUAL           &kp LA(N7)                                        &trans                       &trans              &trans              &kp LS(EQUAL)       &trans              &trans              &trans      
-&trans              &kp LS(DOT)         &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
-&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
-                                                            &trans              &kp RA(Q)           &trans                                                                         &trans              &trans              &trans     
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        w_layer {
-            display-name = "W_Layer";
-            bindings = <  
-&none               &none               &kp DEL             &kp DEL             &kp H               &kp LS(SLASH)                                     &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none
-&kp LG(TAB)         &kp N               &kp MINUS           &kp K               &kp BSPC            &kp J                             &trans          &trans     &trans            &none               &kp KP_N4           &kp KP_N5           &kp KP_N6           &none               &none  
-&none               &none               &none               &kp LC(FSLH)        &kp LC(N1)          &kp L               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none
-                                                            &kp PLUS            &kp LS(LC(LA(N)))   &kp ENTER                                                                      &kp BSPC            &kp KP_N0           &kp TAB   
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        w_layer_mac {
-            display-name = "W_LayerM";
-            bindings = <  
-&none               &none               &kp DEL             &kp DEL             &kp H               &kp LS(SLASH)                                     &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &none
-&kp LC(UP)          &kp N               &kp MINUS           &kp K               &kp BSPC            &kp J                             &trans          &trans     &trans            &none               &kp KP_N4           &kp KP_N5           &kp KP_N6           &none               &none  
-&none               &none               &none               &kp LC(FSLH)        &kp LC(N1)          &kp L               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none
-                                                            &kp PLUS            &kp LA(SPACE)       &kp ENTER                                                                      &kp BSPC            &kp KP_N0           &kp TAB   
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        e_layer {
-            display-name = "E_Layer";
-            bindings = <  
-&tog GAMING         &none               &kp LC(LG(LEFT))    &none               &kp LC(LG(RIGHT))   &kp LC(Z)                                            &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
-&kp LG(TAB)         &kp LC(F)           &kp LG(LS(LEFT))    &none               &kp LG(LS(RIGHT))   &kp LC(Y)                            &trans          &trans     &trans            &rgb_ug RGB_EFR       &rgb_ug RGB_SPD     &rgb_ug RGB_BRD     &rgb_ug RGB_SAD     &rgb_ug RGB_HUD     &trans    
-&none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &bt BT_CLR       
-                                                            &kp C_NEXT          &kp LS(LC(LA(DOT))) &kp ENTER                                                                         &macswitch            &bt BT_SEL 2        &bt BT_SEL 3
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        e_layer_mac {
-            display-name = "E_Layer_Mac";
-            bindings = <  
-&tog GAMING         &none               &kp LC(LEFT)        &none               &kp LC(RIGHT)       &kp LG(LS(Y))                                        &trans                       &rgb_ug RGB_EFF       &rgb_ug RGB_SPI     &rgb_ug RGB_BRI     &rgb_ug RGB_SAI     &rgb_ug RGB_HUI     &rgb_ug RGB_TOG      
-&kp LC(UP)          &kp LG(F)           &kp LG(LS(LEFT))    &none               &kp LG(LS(RIGHT))   &kp LG(Y)                            &trans          &trans     &trans            &rgb_ug RGB_EFR       &rgb_ug RGB_SPD     &rgb_ug RGB_BRD     &rgb_ug RGB_SAD     &rgb_ug RGB_HUD     &trans    
-&none               &none               &none               &none               &none               &kp LG(UP)           &none                           &trans                       &trans                &trans              &trans              &trans              &trans              &bt BT_CLR   
-                                                            &kp C_NEXT          &kp LG(SPACE)       &kp ENTER                                                                         &winswitch            &bt BT_SEL 2        &bt BT_SEL 3
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        numbers {
-            display-name = "Numbers";
-            bindings = <
-&buildl             &none               &kp KP_PLUS         &kp KP_MULTIPLY     &kp KP_DIVIDE       &kp MINUS                                         &trans                       &none               &kp KP_N7           &kp KP_N8           &kp KP_N9           &none               &kp KP_NLCK 
-&none               &kp TAB             &kp KP_MINUS        &kp DOT             &kp SPACE           &kp LS(DOT)                       &buildr         &trans     &bootloader       &td1                &kp KP_N4           &kp KP_N5           &kp KP_N6           &none               &none
-&none               &none               &none               &kp COMMA           &none               &none               &trans                        &trans                       &td0                &kp KP_N1           &kp KP_N2           &kp KP_N3           &none               &none 
-                                                            &trans              &trans              &kp DOT                                                                        &kp BSPC            &kp KP_N0           &kp TAB     
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        function {
-            display-name = "Function";
-            bindings = <
-&trans              &kp F1              &kp F2              &kp F3              &kp F4              &kp F5                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
-&trans              &trans              &kp F6              &kp F7              &kp F8              &kp F8                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
-&trans              &trans              &kp F9              &kp F10             &kp F11             &kp F12              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
                                                             &trans              &trans              &trans                                                                         &trans              &trans              &trans    
             >;
 
             sensor-bindings = <&scroll_encoder>;
         };
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        empty_2 {
+    layer_2 {
+            display-name = "Empty";
+            bindings = <
+&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
+                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans    
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    layer_3 {
+            display-name = "Empty";
+            bindings = <
+&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
+&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
+                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans    
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };                        
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    empty_2 {
             display-name = "Empty";
             bindings = <
 &trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
@@ -1027,4 +772,3 @@
 //             >
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
