@@ -52,8 +52,8 @@ layers:
   Symbols:
   - {t: '`', s: '~'}
   - '{'
+  - '{'
   - {t: '[', s: '{'}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
   - '}'
   - $$mdi:pan-up$$
@@ -80,8 +80,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - <
+  - <
   - (
-  - {t: '$$mdi:transfer$$', type: trans}
   - )
   - '>'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -177,7 +177,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
-  - RGB COLOR HSB(0,100,50)
+  - RGB EFF
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
