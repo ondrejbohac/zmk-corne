@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:arrow-right-bold$$', h: Media}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - Alt+$$mdi:keyboard-space$$
+  - {t: 'Alt+$$mdi:keyboard-space$$', h: Czech}
   Symbols:
   - {t: '`', s: '~'}
   - '{'
@@ -135,7 +135,7 @@ layers:
   - Ctl+X
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -342,7 +342,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
 combos:
 - p: [1, 2]
   k: F2
@@ -356,10 +356,7 @@ combos:
   k: Gui+L
   l: [Base]
 - p: [14, 18]
-  k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  k: LEFT WIN
 - p: [3, 44]
   k: Gui+E
   l: [Base]
-- p: [0, 1]
-  k: {t: Gaming, h: toggle}
-  l: [Base, Symbols, Functions]
