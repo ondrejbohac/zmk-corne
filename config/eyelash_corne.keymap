@@ -95,13 +95,6 @@
             bindings = <&kp LG(A)>;
         };
 
-        combo_m {
-            timeout-ms = <25>;
-            key-positions = <3 4>;
-            bindings = <&kp M>;
-            layers = <0 1>;
-        };
-
         combo_win_e {
             timeout-ms = <30>;
             key-positions = <3 44>;
@@ -122,6 +115,123 @@
 
 / {
     macros {
+        m_speed1: m_speed1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <200>;
+            tap-ms = <20>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(R)>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp KP_N2 &kp KP_N0 &kp KP_N0>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>;
+        };
+
+        m_speed2: m_speed2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <200>;
+            tap-ms = <20>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(R)>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp KP_N4 &kp KP_N0 &kp KP_N0>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>;
+        };
+
+        m_speed3: m_speed3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <200>;
+            tap-ms = <20>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(R)>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp KP_N8 &kp KP_N0 &kp KP_N0>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp ENTER>,
+                <&macro_wait_time 20>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>,
+                <&macro_tap>,
+                <&kp LS(LC(LA(O)))>;
+        };
+
         m_del5: m_del5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -234,6 +344,42 @@
                 <&kp KP_N0 &kp KP_N9 &kp KP_N6>,
                 <&macro_release>,
                 <&kp LALT>;
+        };
+
+        buildl: buildl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_tap>,
+                <&kp LS(LC(LA(UP)))>,
+                <&macro_tap>,
+                <&bootloader>;
+        };
+
+        buildr: buildr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <100>;
+            tap-ms = <100>;
+            bindings = <&macro_tap>, <&kp LS(LC(LA(DOWN)))>;
+        };
+
+        cstest: cstest {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_tap>,
+                <&kp N1>,
+                <&macro_tap>,
+                <&kp DOT &kp B &kp K &kp K &kp ENTER>,
+                <&macro_tap>,
+                <&kp DOT &kp F &kp T &kp M &kp ENTER>,
+                <&macro_tap>,
+                <&kp DOT &kp M &kp P &kp I &kp ENTER>;
         };
 
         swapp: swapp {
@@ -459,7 +605,7 @@
 &kp TAB              &kp Q  &kp W                        &kp E                     &kp R                      &kp T                                      &mmv MOVE_UP                     &kp Y     &kp U                      &kp I                     &kp O                         &kp P          &kp BACKSLASH
 &kp ESC              &kp A  &hold_tap_custom LEFT_ALT S  &hold_tap_custom LCTRL D  &hold_tap_custom LSHIFT F  &kp G                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H     &hold_tap_custom RSHIFT J  &hold_tap_custom RCTRL K  &hold_tap_custom RIGHT_ALT L  &kp SEMICOLON  &kp SQT
 &lshift LSHFT LSHFT  &kp Z  &kp X                        &kp C                     &kp V                      &kp B        &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N     &kp M                      &kp COMMA                 &kp DOT                       &kp FSLH       &kp RSHFT
-                                                         &lt 1 LEFT_ARROW          &lt 2 SPACE                &lt 3 RIGHT                                                                 &kp BSPC  &kp ENTER                  &lt 6 LC(SPACE)
+                                                         &lt 1 LEFT_ARROW          &lt 2 SPACE                &lt 3 RIGHT                                                                 &kp BSPC  &kp ENTER                  &kp LC(SPACE)
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -470,10 +616,10 @@
         symbols {
             display-name = "Symbols";
             bindings = <
-&kp GRAVE  &kp LEFT_BRACE  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE                             &msc SCRL_UP                     &kp N7        &kp N8        &kp N9           &kp EQUAL  &kp ASTERISK  &trans
-&kp CARET  &kp AT_SIGN     &kp DOLLAR      &kp AMPERSAND         &kp PIPE               &kp PERCENT                 &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &kp MINUS  &kp PLUS      &trans
-&trans     &kp LESS_THAN   &kp LESS_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &trans                    &msc SCRL_DOWN                   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp N0     &trans        &trans
-                                           &trans                &trans                 &trans                                                                       &trans        &trans        &kp PRINTSCREEN
+&kp GRAVE  &kp LEFT_BRACE  &kp LEFT_BRACKET      &trans         &kp RIGHT_BRACKET      &kp RIGHT_BRACE                             &msc SCRL_UP                     &kp N7        &kp N8        &kp N9           &kp EQUAL  &kp ASTERISK  &trans
+&kp CARET  &kp AT_SIGN     &kp DOLLAR            &kp AMPERSAND  &kp PIPE               &kp PERCENT                 &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &kp MINUS  &kp PLUS      &trans
+&trans     &kp LESS_THAN   &kp LEFT_PARENTHESIS  &trans         &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &trans                    &msc SCRL_DOWN                   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp N0     &trans        &trans
+                                                 &trans         &trans                 &trans                                                                       &trans        &trans        &kp PRINTSCREEN
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -498,10 +644,10 @@
         layer_3 {
             display-name = "Media";
             bindings = <
-&rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &trans      &trans        &trans                              &trans                   &trans  &trans  &trans  &trans  &trans  &to 4
-&rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &trans      &kp C_VOL_DN  &kp C_VOLUME_UP             &trans  &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans           &kp C_PREV  &kp C_NEXT    &kp C_PLAY_PAUSE  &trans            &trans                   &trans  &trans  &trans  &trans  &trans  &trans
-                                                   &trans      &trans        &trans                                                       &trans  &trans  &trans
+&rgb_ug RGB_HUI  &rgb_ug RGB_SAI                  &rgb_ug RGB_BRI  &trans      &trans        &trans                              &trans                   &trans  &trans  &trans  &trans  &trans  &to 4
+&rgb_ug RGB_HUD  &rgb_ug RGB_SAD                  &rgb_ug RGB_BRD  &trans      &kp C_VOL_DN  &kp C_VOLUME_UP             &trans  &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &trans           &kp C_PREV  &kp C_NEXT    &kp C_PLAY_PAUSE  &trans            &trans                   &trans  &trans  &trans  &trans  &trans  &trans
+                                                                   &trans      &trans        &trans                                                       &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -519,8 +665,8 @@
             >;
         };
 
-        FKeys {
-            display-name = "f keys";
+        Function {
+            display-name = "Function";
             bindings = <
 &trans  &kp F1   &kp F2   &kp F3   &kp F4  &kp F5                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp F6   &kp F7   &kp F8   &kp F8  &kp F9            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
