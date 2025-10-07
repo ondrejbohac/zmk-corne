@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:arrow-left-bold$$', h: Symbols}
   - {t: '$$mdi:keyboard-space$$', h: Functions}
   - {t: '$$mdi:arrow-right-bold$$', h: Media}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', h: Function}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: 'Alt+$$mdi:keyboard-space$$', h: Czech}
   Symbols:
@@ -100,7 +100,7 @@ layers:
   - PRINTSCREEN
   Functions:
   - {t: '$$mdi:transfer$$', type: trans}
-  - PRINTSCREEN
+  - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -135,7 +135,7 @@ layers:
   - Ctl+X
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Z, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -154,11 +154,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&bl BL_CYCLE'
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gaming, h: toggle}
   - RGB HUD
@@ -177,7 +177,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
-  - RGB EFF
+  - RGB COLOR HSB(0,100,50)
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
   - $$mdi:skip-next$$
@@ -291,7 +291,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Czech:
@@ -356,7 +356,13 @@ combos:
   k: Gui+L
   l: [Base]
 - p: [14, 18]
-  k: LEFT WIN
+  k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
+- p: [3, 4]
+  k: M
+  l: [Base, Symbols]
 - p: [3, 44]
   k: Gui+E
   l: [Base]
+- p: [0, 1]
+  k: {t: Gaming, h: toggle}
+  l: [Base, Symbols, Functions]
