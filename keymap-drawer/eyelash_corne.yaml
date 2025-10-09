@@ -53,7 +53,7 @@ layers:
   - {t: '`', s: '~'}
   - '{'
   - {t: '[', s: '{'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - _
   - {t: ']', s: '}'}
   - '}'
   - $$mdi:pan-up$$
@@ -99,7 +99,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
   Functions:
-  - Ctl+.
+  - {t: Ctl+`, s: Ctl+~}
   - PRINTSCREEN
   - HOME
   - $$mdi:arrow-up-bold$$
@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Media:
