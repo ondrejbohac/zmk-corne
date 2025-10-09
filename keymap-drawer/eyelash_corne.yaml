@@ -46,8 +46,8 @@ layers:
   - {t: '$$mdi:arrow-left-bold$$', h: Symbols}
   - {t: '$$mdi:keyboard-space$$', h: Functions}
   - {t: '$$mdi:arrow-right-bold$$', h: Media}
-  - {t: '$$mdi:backspace$$', h: Function}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: Function}
   - {t: 'Alt+$$mdi:keyboard-space$$', h: Czech}
   Symbols:
   - {t: '`', s: '~'}
@@ -99,8 +99,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
   Functions:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+.
+  - PRINTSCREEN
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -112,7 +112,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+Alt+F
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -155,9 +155,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gaming, h: toggle}
@@ -291,8 +291,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Czech:
   - {t: '$$mdi:transfer$$', type: trans}
