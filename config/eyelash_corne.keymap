@@ -700,9 +700,9 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB               &kp Q          &kp W          &kp E            &kp R          &kp T                                         &mmv MOVE_UP                      &kp Y             &kp U             &kp I           &kp O           &kp P            &quotation  
-&kp ESC               &kp A          &kp S          &mod_d           &mod_f         &mod_g                        &mmv MOVE_LEFT  &mkp LCLK &mmv MOVE_RIGHT         &kp H             &mod_j            &mod_k          &kp L           &hyper_exclam    &kp ENTER
-&lshift LSHFT LSHFT   &ctrl_z        &kp X          &kp C            &kp V          &kp B          &kp C_MUTE                     &mmv MOVE_DOWN                    &kp N             &kp M             &kp COMMA       &kp DOT         &kp FSLH         &kp RSHFT
+&kp TAB               &kp Q          &kp W          &kp E            &kp R          &kp T                                         &kp LA(TAB)                      &kp Y             &kp U             &kp I           &kp O           &kp P            &quotation  
+&kp ESC               &kp A          &kp S          &mod_d           &mod_f         &mod_g                        &kp LC(LG(LEFT))  &kp LG(TAB) &kp LC(LG(RIGHT))         &kp H             &mod_j            &mod_k          &kp L           &hyper_exclam    &kp ENTER
+&lshift LSHFT LSHFT   &ctrl_z        &kp X          &kp C            &kp V          &kp B          &kp C_MUTE                     &kp LA(LS(TAB))                    &kp N             &kp M             &kp COMMA       &kp DOT         &kp FSLH         &kp RSHFT
                                                     &lt LAYER_1 MOVE_LEFT    &lt LAYER_2 SPACE     &lt LAYER_3 MOVE_RIGHT                                           &kp BSPC          &kp ENTER         &tog MAC  
             >;
 
@@ -736,14 +736,14 @@
     layer_3 {
             display-name = "Empty";
             bindings = <
-&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans      
-&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans    
-&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans    
-                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans    
+&trans              &trans              &trans              &trans              &trans              &trans                                            &trans                       &trans              &trans              &trans              &trans              &trans              &trans
+&trans              &trans              &trans              &trans              &trans              &trans                            &trans          &trans     &trans            &trans              &trans              &trans              &trans              &trans              &trans
+&trans              &trans              &trans              &trans              &trans              &trans              &trans                        &trans                       &trans              &trans              &trans              &trans              &trans              &trans
+                                                            &trans              &trans              &trans                                                                         &trans              &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };                        
+        };
 // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     empty_2 {
             display-name = "Empty";
