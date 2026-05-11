@@ -12,10 +12,11 @@ manifest:
       revision: main
     - name: zmk
       remote: zmkfirmware
-      # Pinned to last commit before Zephyr 4.1.0 / HWMv2 migration (b66a8cc on
-      # 2026-03-26). The eyelash_corne board (HWMv1) is incompatible with
-      # newer ZMK until the vendor migrates.
-      revision: e4fb39d4a6514fe90d44b1570f908bddc5df0ad2
+      # Pinned to last commit before ZMK moved to Zephyr v4.1 (c06fa48 on
+      # 2025-12-10, which broke HWMv1 boards and updated module manifests).
+      # The eyelash_corne board uses HWMv1 (boards/arm/eyelash_corne/).
+      # Unpin when the vendor board migrates to HWMv2.
+      revision: abb64ba316c29caddc49727ca2cac2f0ed5970c7
       import: app/west.yml
   self:
     path: config
