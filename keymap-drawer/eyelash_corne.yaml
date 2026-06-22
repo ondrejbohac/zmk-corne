@@ -1,13 +1,13 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  Base:
+  Mac:
   - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
   - R
   - T
-  - Alt+$$mdi:keyboard-tab$$
+  - Gui+$$mdi:keyboard-tab$$
   - Y
   - U
   - I
@@ -17,12 +17,12 @@ layers:
   - $$mdi:keyboard-esc$$
   - A
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: LGUI}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
-  - Ctl+Gui+$$mdi:arrow-left-bold$$
-  - Gui+$$mdi:keyboard-tab$$
-  - Ctl+Gui+$$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-up-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
@@ -36,7 +36,7 @@ layers:
   - V
   - B
   - $$mdi:volume-off$$
-  - Alt+Sft+$$mdi:keyboard-tab$$
+  - Gui+Sft+$$mdi:keyboard-tab$$
   - N
   - M
   - {t: ',', s: <}
@@ -170,10 +170,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Gui+D
-  - Ctl+Gui+$$mdi:arrow-left-bold$$
-  - Gui+$$mdi:keyboard-tab$$
-  - Ctl+Gui+$$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:arrow-up-bold$$
+  - Ctl+$$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB TOG
@@ -184,8 +184,8 @@ layers:
   - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Win, h: toggle}
+  - {t: Mac, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -244,7 +244,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Base, h: toggle}
+  - {t: Mac, h: toggle}
   Function:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -343,26 +343,79 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  Win:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Alt+$$mdi:keyboard-tab$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: \, s: '|'}
+  - $$mdi:keyboard-esc$$
+  - A
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
+  - G
+  - Ctl+Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:keyboard-tab$$
+  - Ctl+Gui+$$mdi:arrow-right-bold$$
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:volume-off$$
+  - Alt+Sft+$$mdi:keyboard-tab$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:arrow-left-bold$$', h: Symbols}
+  - {t: '$$mdi:keyboard-space$$', h: Functions}
+  - {t: '$$mdi:arrow-right-bold$$', h: Media}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', h: Function}
+  - {t: 'Alt+$$mdi:keyboard-space$$', h: Czech}
 combos:
 - p: [1, 2]
   k: F2
 - p: [3, 15, 17]
   k: F5
-  l: [Base, Symbols, Media, Gaming]
+  l: [Mac, Symbols, Media, Gaming, Win]
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
-  l: [Base, Symbols]
+  l: [Mac, Symbols, Win]
+- p: [11, 12]
+  k: Ctl+Gui+Q
+  l: [Mac]
 - p: [11, 12]
   k: Gui+L
-  l: [Base]
+  l: [Win]
 - p: [14, 18]
   k: {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  l: [Win]
 - p: [3, 4]
   k: M
-  l: [Base, Symbols]
+  l: [Mac, Symbols, Win]
 - p: [3, 44]
   k: Gui+E
-  l: [Base]
+  l: [Win]
 - p: [0, 1]
   k: {t: Gaming, h: toggle}
-  l: [Base, Symbols, Functions]
+  l: [Mac, Symbols, Functions, Win]
