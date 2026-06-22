@@ -73,48 +73,56 @@
             timeout-ms = <50>;
             key-positions = <3 15 17>;
             bindings = <&kp F5>;
-            layers = <0 1 3 4>;
+            layers = <0 1 3 4 7>;
         };
 
         combo_we {
             timeout-ms = <30>;
             key-positions = <2 3>;
             bindings = <&kp ESC>;
-            layers = <0 1>;
+            layers = <0 1 7>;
         };
 
         combo_lock {
             timeout-ms = <50>;
             key-positions = <11 12>;
-            bindings = <&kp LG(L)>;
+            bindings = <&kp LC(LG(Q))>;   // Mac: zámek (Ctrl+Cmd+Q)
             layers = <0>;
+        };
+
+        combo_lock_win {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp LG(L)>;        // Win: zámek (Win+L)
+            layers = <7>;
         };
 
         combo_sound {
             timeout-ms = <10>;
             key-positions = <14 18>;
             bindings = <&kp LG(A)>;
+            layers = <7>;                  // Win action center (na Macu neexistuje)
         };
 
         combo_m {
             timeout-ms = <25>;
             key-positions = <3 4>;
             bindings = <&kp M>;
-            layers = <0 1>;
+            layers = <0 1 7>;
         };
 
         combo_win_e {
             timeout-ms = <30>;
             key-positions = <3 44>;
             bindings = <&kp LG(E)>;
-            layers = <0>;
+            layers = <7>;                  // Win Explorer (jen na Win base)
         };
 
         combo_gaming {
             timeout-ms = <30>;
             key-positions = <0 1>;
             bindings = <&tog 4>;
-            layers = <0 1 2>;
+            layers = <0 1 2 7>;
         };
     };
 };
@@ -609,11 +617,11 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Base";
+            display-name = "Mac";
             bindings = <
-&kp TAB              &kp Q  &kp W                        &kp E                     &kp R                      &kp T                                      &kp LA(TAB)                     &kp Y          &kp U                      &kp I                     &kp O                         &kp P          &kp BACKSLASH
-&kp ESC              &kp A  &hold_tap_custom LEFT_ALT S  &hold_tap_custom LCTRL D  &hold_tap_custom LSHIFT F  &kp G                      &kp LC(LG(LEFT))  &kp LG(TAB)       &kp LC(LG(RIGHT))  &kp H          &hold_tap_custom RSHIFT J  &hold_tap_custom RCTRL K  &hold_tap_custom RIGHT_ALT L  &kp SEMICOLON  &kp SQT
-&lshift LSHFT LSHFT  &kp Z  &kp X                        &kp C                     &kp V                      &kp B        &kp C_MUTE                    &kp LA(LS(TAB))                   &kp N          &kp M                      &kp COMMA                 &kp DOT                       &kp FSLH       &kp RSHFT
+&kp TAB              &kp Q  &kp W                        &kp E                     &kp R                      &kp T                                      &kp LG(TAB)                     &kp Y          &kp U                      &kp I                     &kp O                         &kp P          &kp BACKSLASH
+&kp ESC              &kp A  &hold_tap_custom LEFT_ALT S  &hold_tap_custom LGUI D  &hold_tap_custom LSHIFT F  &kp G                      &kp LC(LEFT)      &kp LC(UP)        &kp LC(RIGHT)  &kp H          &hold_tap_custom RSHIFT J  &hold_tap_custom RCTRL K  &hold_tap_custom RIGHT_ALT L  &kp SEMICOLON  &kp SQT
+&lshift LSHFT LSHFT  &kp Z  &kp X                        &kp C                     &kp V                      &kp B        &kp C_MUTE                    &kp LG(LS(TAB))                   &kp N          &kp M                      &kp COMMA                 &kp DOT                       &kp FSLH       &kp RSHFT
                                                          &lt 1 LEFT_ARROW          &lt 2 SPACE                &lt 3 RIGHT                                                                 &kp BACKSPACE  &lt 5 ENTER                &lt 6 LA(SPACE)
             >;
 
@@ -654,8 +662,8 @@
             display-name = "Media";
             bindings = <
 &rgb_ug RGB_HUI  &rgb_ug RGB_SAI                  &rgb_ug RGB_BRI  &trans      &trans        &trans                              &trans                   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &bt BT_CLR  &to 4
-&rgb_ug RGB_HUD  &rgb_ug RGB_SAD                  &rgb_ug RGB_BRD  &trans      &kp C_VOL_DN  &kp C_VOLUME_UP             &trans  &rgb_ug RGB_TOG  &trans  &kp LC(LG(D)) &kp LC(LG(LEFT)) &kp LG(TAB)   &kp LC(LG(RIGHT)) &trans      &trans
-&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &trans           &kp C_PREV  &kp C_NEXT    &kp C_PLAY_PAUSE  &trans            &trans                   &trans        &trans        &trans        &trans  &trans      &trans
+&rgb_ug RGB_HUD  &rgb_ug RGB_SAD                  &rgb_ug RGB_BRD  &trans      &kp C_VOL_DN  &kp C_VOLUME_UP             &trans  &rgb_ug RGB_TOG  &trans  &kp LC(UP) &kp LC(LEFT) &kp LC(RIGHT) &trans &trans      &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &trans           &kp C_PREV  &kp C_NEXT    &kp C_PLAY_PAUSE  &trans            &trans                   &to 7         &to 0        &trans        &trans  &trans      &trans
                                                                    &trans      &trans        &trans                                                       &trans        &trans        &trans
             >;
 
@@ -692,6 +700,20 @@
 &trans  &trans            &trans            &trans      &trans      &trans      &trans            &trans          &trans      &trans      &trans      &trans      &trans      &trans
                                             &trans      &trans      &trans                                        &trans      &trans      &trans
             >;
+        };
+
+        // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        WIN {
+            display-name = "Win";
+            bindings = <
+&kp TAB              &kp Q  &kp W                        &kp E                     &kp R                      &kp T                                      &kp LA(TAB)                     &kp Y          &kp U                      &kp I                     &kp O                         &kp P          &kp BACKSLASH
+&kp ESC              &kp A  &hold_tap_custom LEFT_ALT S  &hold_tap_custom LCTRL D  &hold_tap_custom LSHIFT F  &kp G                      &kp LC(LG(LEFT))  &kp LG(TAB)       &kp LC(LG(RIGHT))  &kp H          &hold_tap_custom RSHIFT J  &hold_tap_custom RCTRL K  &hold_tap_custom RIGHT_ALT L  &kp SEMICOLON  &kp SQT
+&lshift LSHFT LSHFT  &kp Z  &kp X                        &kp C                     &kp V                      &kp B        &kp C_MUTE                    &kp LA(LS(TAB))                   &kp N          &kp M                      &kp COMMA                 &kp DOT                       &kp FSLH       &kp RSHFT
+                                                         &lt 1 LEFT_ARROW          &lt 2 SPACE                &lt 3 RIGHT                                                                 &kp BACKSPACE  &lt 5 ENTER                &lt 6 LA(SPACE)
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
 
         // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
