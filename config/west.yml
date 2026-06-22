@@ -9,7 +9,11 @@ manifest:
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
-      revision: main
+      # Pinned to last HWMv1 revision (a7d93082, 2026-03-05). The vendor's
+      # "Dev1 (#63)" (2026-06-05) migrated the board to HWMv2 shield layout,
+      # which the pinned pre-Zephyr-4.1 ZMK can't resolve ("Invalid BOARD").
+      # Unpin together with the zmk revision below when moving to HWMv2.
+      revision: a7d93082b24f5b20e710a5db9b0e3141ade229b3
     - name: zmk
       remote: zmkfirmware
       # Pinned to last commit before ZMK moved to Zephyr v4.1 (c06fa48 on
