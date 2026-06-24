@@ -649,7 +649,7 @@
             bindings = <
 &kp LC(GRAVE)  &kp PRINTSCREEN  &kp HOME   &kp UP_ARROW  &kp END    &kp PG_UP                        &trans          &trans         &trans  &trans  &trans  &trans  &trans
 &kp LS(LA(F))  &kp LSHIFT       &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN            &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
-&trans         &kp LC(Z)        &kp LC(Y)  &kp LC(C)     &kp LC(V)  &kp LC(X)      &trans            &trans          &trans         &trans  &trans  &trans  &trans  &trans
+&trans         &kp LG(Z)        &kp LG(LS(Z))  &kp LG(C)     &kp LG(V)  &kp LG(X)      &trans            &trans          &trans         &trans  &trans  &trans  &trans  &trans
                                            &trans        &trans     &trans                                           &kp BACKSPACE  &trans  &trans
             >;
 
@@ -713,7 +713,23 @@
 &trans  &trans  &trans  &trans                    &trans  &trans                            &kp LA(TAB)                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &hold_tap_custom LCTRL D  &trans  &trans          &kp LC(LG(LEFT))  &kp LG(TAB)  &kp LC(LG(RIGHT))  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                    &trans  &trans  &trans                    &kp LA(LS(TAB))              &trans  &trans  &trans  &trans  &trans  &trans
-                                                  &trans                  &trans            &trans                       &trans  &trans  &trans
+                                                  &trans                  &lt 8 SPACE       &trans                       &trans  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        WinFn {
+            display-name = "WinFn";
+            // Win varianta Functions: clipboard/undo přes Ctrl (na Win base
+            // ji volá prostřední levý palec přes &lt 8).
+            bindings = <
+&kp LC(GRAVE)  &kp PRINTSCREEN  &kp HOME   &kp UP_ARROW  &kp END    &kp PG_UP                        &trans          &trans         &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(F))  &kp LSHIFT       &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN            &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
+&trans         &kp LC(Z)        &kp LC(Y)  &kp LC(C)     &kp LC(V)  &kp LC(X)      &trans            &trans          &trans         &trans  &trans  &trans  &trans  &trans
+                                           &trans        &trans     &trans                                           &kp BACKSPACE  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
