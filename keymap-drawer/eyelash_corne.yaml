@@ -97,10 +97,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - PRINTSCREEN
+  - {t: Gui+Sft+4, s: Gui+Sft+$}
   Functions:
   - {t: Ctl+`, s: Ctl+~}
-  - PRINTSCREEN
+  - {t: Gui+Sft+4, s: Gui+Sft+$}
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -386,7 +386,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:arrow-left-bold$$', h: WinSym}
   - {t: '$$mdi:keyboard-space$$', h: WinFn}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -441,6 +441,55 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  WinSym:
+  - {t: '`', s: '~'}
+  - '{'
+  - {t: '[', s: '{'}
+  - _
+  - {t: ']', s: '}'}
+  - '}'
+  - $$mdi:pan-up$$
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '=', s: +}
+  - '*'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ^
+  - '@'
+  - $
+  - '&'
+  - '|'
+  - '%'
+  - $$mdi:pan-left$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-right$$
+  - '4'
+  - {t: '5', s: '%'}
+  - '6'
+  - {t: '-', s: _}
+  - +
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - <
+  - (
+  - {t: '$$mdi:transfer$$', type: trans}
+  - )
+  - '>'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:pan-down$$
+  - '1'
+  - '2'
+  - '3'
+  - {t: '0', s: )}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Sft+S
 combos:
 - p: [1, 2]
   k: F2
