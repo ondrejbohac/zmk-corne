@@ -793,11 +793,14 @@
 
         MacCzech {
             display-name = "MacCz";
-            // macOS varianta diakritiky (OS-aware, paralela k CZECH/RA pro Win).
+            // macOS varianta diakritiky (paralela k CZECH/RA pro Win).
             // Na Mac base ji volá pravý palec vpravo přes &lt 10.
-            // České rozložení v OS → znaky přímo přes keycody:
+            //
+            // VYŽADUJE: macOS Input Source = "Czech - QWERTY". Pak tyto keycody
+            // padají rovnou na české znaky (na US layoutu by N2 dalo "2"):
             //   ě=N2 š=N3 č=N4 ř=N5 ž=N6 ý=N7 á=N8 í=N9 é=N0 ú=[ ů=;
-            // ó ď ť ň přes mrtvé klávesy (makra, k ověření).
+            // ó ď ť ň přes mrtvé klávesy: ´=EQUAL, ˇ=LS(EQUAL) (viz makra mac_*).
+            // Pozn.: pokrývá jen malá písmena; velká (Ě Š …) zatím ne.
             bindings = <
 &trans  &kp N2     &kp N3     &kp N4     &kp N5     &kp N6                     &trans          &kp N7  &kp N8  &kp N9  &kp N0  &kp LBKT  &trans
 &trans  &kp SEMI   &mac_oa    &mac_dc    &mac_tc    &mac_nc            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans
