@@ -57,9 +57,9 @@ layers:
   - {t: ']', s: '}'}
   - '}'
   - $$mdi:pan-up$$
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
+  - KP 7
+  - KP 8
+  - KP 9
   - {t: '=', s: +}
   - '*'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -72,9 +72,9 @@ layers:
   - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-right$$
-  - '4'
-  - {t: '5', s: '%'}
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - {t: '-', s: _}
   - +
   - {t: '$$mdi:transfer$$', type: trans}
@@ -86,18 +86,18 @@ layers:
   - '>'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
-  - '1'
-  - '2'
-  - '3'
-  - {t: '0', s: )}
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: Gui+Sft+4, s: Gui+Sft+$}
+  - {t: Gui+Sft+3, s: Gui+Sft+#}
   Functions:
   - {t: Ctl+`, s: Ctl+~}
   - {t: Gui+Sft+4, s: Gui+Sft+$}
@@ -449,9 +449,9 @@ layers:
   - {t: ']', s: '}'}
   - '}'
   - $$mdi:pan-up$$
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
+  - KP 7
+  - KP 8
+  - KP 9
   - {t: '=', s: +}
   - '*'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -464,9 +464,9 @@ layers:
   - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-right$$
-  - '4'
-  - {t: '5', s: '%'}
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - {t: '-', s: _}
   - +
   - {t: '$$mdi:transfer$$', type: trans}
@@ -478,18 +478,18 @@ layers:
   - '>'
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
-  - '1'
-  - '2'
-  - '3'
-  - {t: '0', s: )}
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Sft+S
+  - Gui+PRINTSCREEN
 combos:
 - p: [1, 2]
   k: F2
