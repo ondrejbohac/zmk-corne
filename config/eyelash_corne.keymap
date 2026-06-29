@@ -24,6 +24,8 @@
 &lt {
     quick-tap-ms = <200>;
     tapping-term-ms = <200>;
+    flavor = "balanced";   // hold se aktivuje, jen kdyz druhou klavesu stiskneš A pustíš
+                           // dokud držíš palec → čísla/zkratky fungují i při rychlém psaní
 };
 
 // Sticky key
@@ -636,7 +638,7 @@
 &kp GRAVE  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp UNDER      &kp RIGHT_BRACKET      &kp RIGHT_BRACE                             &msc SCRL_UP                     &kp N7        &kp N8        &kp N9           &kp EQUAL  &kp ASTERISK  &trans
 &kp CARET  &kp AT_SIGN     &kp DOLLAR            &kp AMPERSAND  &kp PIPE               &kp PERCENT                 &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &kp MINUS  &kp PLUS      &trans
 &trans     &kp LESS_THAN   &kp LEFT_PARENTHESIS  &trans         &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &trans                    &msc SCRL_DOWN                   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp N0     &trans        &trans
-                                                 &trans         &trans                 &trans                                                                       &kp DELETE    &trans        &kp PRINTSCREEN
+                                                 &trans         &trans                 &trans                                                                       &kp DELETE    &trans        &kp LG(LS(N4))
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -647,7 +649,7 @@
         Functions {
             display-name = "Functions";
             bindings = <
-&kp LC(GRAVE)  &kp PRINTSCREEN  &kp HOME   &kp UP_ARROW  &kp END    &kp PG_UP                        &trans          &trans         &trans  &trans  &trans  &trans  &trans
+&kp LC(GRAVE)  &kp LG(LS(N4))   &kp HOME   &kp UP_ARROW  &kp END    &kp PG_UP                        &trans          &trans         &trans  &trans  &trans  &trans  &trans
 &kp LS(LA(F))  &kp LSHIFT       &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN            &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
 &trans         &kp LG(Z)        &kp LG(LS(Z))  &kp LG(C)     &kp LG(V)  &kp LG(X)      &trans            &trans          &trans         &trans  &trans  &trans  &trans  &trans
                                            &trans        &trans     &trans                                           &kp BACKSPACE  &trans  &trans
@@ -713,7 +715,7 @@
 &trans  &trans  &trans  &trans                    &trans  &trans                            &kp LA(TAB)                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &hold_tap_custom LCTRL D  &trans  &trans          &kp LC(LG(LEFT))  &kp LG(TAB)  &kp LC(LG(RIGHT))  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans                    &trans  &trans  &trans                    &kp LA(LS(TAB))              &trans  &trans  &trans  &trans  &trans  &trans
-                                                  &trans                  &lt 8 SPACE       &trans                       &trans  &trans  &trans
+                                                  &lt 9 LEFT_ARROW        &lt 8 SPACE       &trans                       &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -730,6 +732,23 @@
 &kp LS(LA(F))  &kp LSHIFT       &kp LEFT   &kp DOWN      &kp RIGHT  &kp PAGE_DOWN            &trans  &trans  &trans  &trans         &trans  &trans  &trans  &trans  &trans
 &trans         &kp LC(Z)        &kp LC(Y)  &kp LC(C)     &kp LC(V)  &kp LC(X)      &trans            &trans          &trans         &trans  &trans  &trans  &trans  &trans
                                            &trans        &trans     &trans                                           &kp BACKSPACE  &trans  &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        WinSym {
+            display-name = "WinSym";
+            // Win varianta Symbols: shodná s Mac Symbols, jen pravý palec (pos 47)
+            // dělá Win screenshot výběru (Win+Shift+S) místo Mac Cmd+Shift+4.
+            // Na Win base ji volá levý palec (levá pozice) přes &lt 9.
+            bindings = <
+&kp GRAVE  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp UNDER      &kp RIGHT_BRACKET      &kp RIGHT_BRACE                             &msc SCRL_UP                     &kp N7        &kp N8        &kp N9           &kp EQUAL  &kp ASTERISK  &trans
+&kp CARET  &kp AT_SIGN     &kp DOLLAR            &kp AMPERSAND  &kp PIPE               &kp PERCENT                 &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp NUMBER_4  &kp N5        &kp NUMBER_6     &kp MINUS  &kp PLUS      &trans
+&trans     &kp LESS_THAN   &kp LEFT_PARENTHESIS  &trans         &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &trans                    &msc SCRL_DOWN                   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp N0     &trans        &trans
+                                                 &trans         &trans                 &trans                                                                       &kp DELETE    &trans        &kp LG(LS(S))
             >;
 
             sensor-bindings = <&scroll_encoder>;
