@@ -638,7 +638,7 @@
 &kp GRAVE  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp UNDER      &kp RIGHT_BRACKET      &kp RIGHT_BRACE                             &msc SCRL_UP                     &kp KP_N7     &kp KP_N8     &kp KP_N9           &kp EQUAL  &kp ASTERISK  &trans
 &kp CARET  &kp AT_SIGN     &kp DOLLAR            &kp AMPERSAND  &kp PIPE               &kp PERCENT                 &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp MINUS  &kp PLUS      &trans
 &trans     &kp LESS_THAN   &kp LEFT_PARENTHESIS  &trans         &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &trans                    &msc SCRL_DOWN                   &kp KP_N1     &kp KP_N2     &kp KP_N3        &kp KP_N0     &trans        &trans
-                                                 &trans         &trans                 &trans                                                                       &kp DELETE    &trans        &kp LG(LS(N4))
+                                                 &trans         &trans                 &trans                                                                       &kp DELETE    &kp LG(LS(N4))  &kp LG(LS(N3))
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -748,7 +748,7 @@
 &kp GRAVE  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp UNDER      &kp RIGHT_BRACKET      &kp RIGHT_BRACE                             &msc SCRL_UP                     &kp KP_N7     &kp KP_N8     &kp KP_N9           &kp EQUAL  &kp ASTERISK  &trans
 &kp CARET  &kp AT_SIGN     &kp DOLLAR            &kp AMPERSAND  &kp PIPE               &kp PERCENT                 &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp MINUS  &kp PLUS      &trans
 &trans     &kp LESS_THAN   &kp LEFT_PARENTHESIS  &trans         &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &trans                    &msc SCRL_DOWN                   &kp KP_N1     &kp KP_N2     &kp KP_N3        &kp KP_N0     &trans        &trans
-                                                 &trans         &trans                 &trans                                                                       &kp DELETE    &trans        &kp LG(LS(S))
+                                                 &trans         &trans                 &trans                                                                       &kp DELETE    &kp LG(LS(S))   &kp LG(PRINTSCREEN)
             >;
 
             sensor-bindings = <&scroll_encoder>;
