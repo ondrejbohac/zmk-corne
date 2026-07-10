@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
+  - '|'
   - $$mdi:keyboard-esc$$
   - A
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -41,7 +41,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: 'Sft+[', s: 'Sft+{'}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:arrow-left-bold$$', h: Symbols}
   - {t: '$$mdi:keyboard-space$$', h: Functions}
@@ -51,23 +51,23 @@ layers:
   - {t: 'Alt+$$mdi:keyboard-space$$', h: MacCz}
   Symbols:
   - {t: '`', s: '~'}
-  - '{'
-  - {t: '[', s: '{'}
-  - _
-  - {t: ']', s: '}'}
-  - '}'
+  - {t: Alt+9, s: Alt+(}
+  - {t: 'Alt+[', s: 'Alt+{'}
+  - {t: Sft+/, s: 'Sft+?'}
+  - {t: 'Alt+]', s: 'Alt+}'}
+  - {t: Alt+0, s: Alt+)}
   - $$mdi:pan-up$$
   - KP 7
   - KP 8
   - KP 9
-  - {t: '=', s: +}
-  - '*'
+  - {t: '-', s: _}
+  - {t: Alt+8, s: Alt+*}
   - {t: '$$mdi:transfer$$', type: trans}
-  - ^
-  - Alt+V
-  - $
-  - '&'
-  - '|'
+  - {t: Alt+6, s: Alt+^}
+  - {t: Alt+2, s: Alt+@}
+  - {t: Alt+4, s: Alt+$}
+  - {t: Alt+7, s: Alt+&}
+  - Sft+|
   - '%'
   - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -75,15 +75,15 @@ layers:
   - KP 4
   - KP 5
   - KP 6
-  - {t: '-', s: _}
-  - +
+  - {t: /, s: '?'}
+  - {t: '1', s: '!'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - <
-  - (
+  - {t: '`', s: '~'}
+  - {t: 'Sft+]', s: 'Sft+}'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - )
-  - '>'
+  - {t: ']', s: '}'}
+  - {t: Sft+`, s: Sft+~}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-down$$
   - KP 1
@@ -356,7 +356,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -384,7 +384,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:arrow-left-bold$$', h: WinSym}
   - {t: '$$mdi:keyboard-space$$', h: WinFn}
