@@ -50,7 +50,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: Function}
   - {t: 'Alt+$$mdi:keyboard-space$$', h: MacCz}
   Symbols:
-  - {t: '`', s: '~'}
+  - {t: Sft+\, s: Sft+|}
   - {t: Alt+9, s: Alt+(}
   - {t: 'Alt+[', s: 'Alt+{'}
   - {t: Sft+/, s: 'Sft+?'}
@@ -68,7 +68,7 @@ layers:
   - {t: Alt+4, s: Alt+$}
   - {t: Alt+7, s: Alt+&}
   - Sft+|
-  - '%'
+  - {t: Sft+-, s: Sft+_}
   - $$mdi:pan-left$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-right$$
