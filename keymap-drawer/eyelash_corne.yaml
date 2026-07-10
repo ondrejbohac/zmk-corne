@@ -64,7 +64,7 @@ layers:
   - '*'
   - {t: '$$mdi:transfer$$', type: trans}
   - ^
-  - '@'
+  - Alt+V
   - $
   - '&'
   - '|'
@@ -100,7 +100,7 @@ layers:
   - {t: Gui+Sft+3, s: Gui+Sft+#}
   Functions:
   - {t: Ctl+`, s: Ctl+~}
-  - {t: Gui+Sft+4, s: Gui+Sft+$}
+  - {t: Gui+Sft+3, s: Gui+Sft+#}
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
